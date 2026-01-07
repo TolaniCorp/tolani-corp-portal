@@ -1,7 +1,8 @@
 {
-  "name": "galactic-oort",
-  "version": "0.1.0",
+  "name": "tolani-corp-portal",
+  "version": "1.0.0",
   "private": true,
+  "description": "Official website and portal for Tolani Corp - Building Beyond Boundaries",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

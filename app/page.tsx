@@ -1,5 +1,8 @@
+import { Suspense } from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
+import Footer from "../components/Footer";
+import ContactForm from "../components/ContactForm";
 import Image from "next/image";
 import styles from "./page.module.css";
 
@@ -232,64 +235,15 @@ export default function Home() {
                 </p>
               </div>
 
-              <form className={styles.form} action="/api/contact" method="post">
-                <label className={styles.field}>
-                  <span className={styles.fieldLabel}>Name</span>
-                  <input className={styles.input} name="name" autoComplete="name" placeholder="Your name" required minLength={2} />
-                </label>
-                <label className={styles.field}>
-                  <span className={styles.fieldLabel}>Organization</span>
-                  <input className={styles.input} name="org" autoComplete="organization" placeholder="Company / org" />
-                </label>
-                <label className={styles.field}>
-                  <span className={styles.fieldLabel}>Message</span>
-                  <textarea
-                    className={styles.textarea}
-                    name="message"
-                    rows={4}
-                    placeholder="Tell us what you're building and how we can help"
-                    required
-                    minLength={10}
-                  />
-                </label>
-
-                <div className={styles.formActions}>
-                  <button type="submit" className="btn btn-primary">
-                    Send inquiry
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M5 12h14M12 5l7 7-7 7" />
-                    </svg>
-                  </button>
-                  <p className={styles.formNote}>
-                    Messages send to our team email. If you don’t see a response, please allow up to 1 business day.
-                  </p>
-                </div>
-              </form>
+              <Suspense fallback={<div>Loading...</div>}>
+                <ContactForm />
+              </Suspense>
             </div>
-
-            <footer className={styles.footer}>
-              <div className={styles.footerBrand}>
-                <Image
-                  src="/assets/logo.png"
-                  alt="Tolani Corp"
-                  width={160}
-                  height={44}
-                  style={{ objectFit: "contain" }}
-                />
-                <p className={styles.footerText}>
-                  Innovate. Execute. Excel. Building beyond the boundaries of traditional business.
-                </p>
-              </div>
-              <div className={styles.footerLinks}>
-                <a href="#about">About</a>
-                <a href="#global">Global</a>
-                <a href="#innovation">Innovation</a>
-                <a href="#community">Community</a>
-              </div>
-            </footer>
           </div>
         </section>
       </main>
+
+      <Footer />
     </div>
   );
 }

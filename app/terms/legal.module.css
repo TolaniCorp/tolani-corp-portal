@@ -1,0 +1,138 @@
+/* Legal Pages (Privacy & Terms) Styles */
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  padding: calc(var(--space-2xl) + 80px) 0 var(--space-2xl);
+}
+
+.article {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.header {
+  margin-bottom: var(--space-2xl);
+  padding-bottom: var(--space-lg);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: var(--space-sm) 0 var(--space-md);
+}
+
+.lastUpdated {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.section h2 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-gold);
+  margin-bottom: var(--space-md);
+}
+
+.section h3 {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin: var(--space-md) 0 var(--space-sm);
+}
+
+.section p {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+  margin-bottom: var(--space-sm);
+}
+
+.section ul {
+  list-style: none;
+  padding-left: 0;
+  margin: var(--space-sm) 0 var(--space-md);
+}
+
+.section ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+.section ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 6px;
+  height: 6px;
+  background: var(--color-gold);
+  border-radius: 50%;
+}
+
+.section ul li strong {
+  color: var(--color-text-primary);
+}
+
+.address {
+  font-style: normal;
+  padding: var(--space-md);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+}
+
+.address strong {
+  color: var(--color-text-primary);
+}
+
+.address a {
+  color: var(--color-gold);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.address a:hover {
+  color: var(--color-gold-light);
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .main {
+    padding: calc(var(--space-xl) + 80px) 0 var(--space-xl);
+  }
+
+  .section h2 {
+    font-size: 1.125rem;
+  }
+
+  .section p,
+  .section ul li {
+    font-size: 0.9375rem;
+  }
+}
