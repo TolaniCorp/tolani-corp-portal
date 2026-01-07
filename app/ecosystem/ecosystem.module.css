@@ -1,0 +1,283 @@
+.page {
+  min-height: 100vh;
+}
+
+.main {
+  position: relative;
+}
+
+.container {
+  position: relative;
+}
+
+/* Hero Section */
+.heroSection {
+  scroll-margin-top: 110px;
+  padding: var(--space-2xl) 0;
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.08) 0%, rgba(255, 184, 28, 0.08) 100%);
+}
+
+.heroContent {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heroTitle {
+  margin-bottom: var(--space-md);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent-warm));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.heroDescription {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* Values Section */
+.valuesSection {
+  padding: var(--space-2xl) 0;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-lg);
+}
+
+.valueCard {
+  padding: var(--space-lg);
+}
+
+.valueTitle {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-sm);
+  color: var(--color-accent);
+}
+
+.valueBody {
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+/* Section Header */
+.sectionHeader {
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+}
+
+.sectionTitle {
+  margin-bottom: 0;
+}
+
+/* Brands Section */
+.brandsSection {
+  padding: var(--space-2xl) 0;
+}
+
+.brandsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: var(--space-lg);
+}
+
+.brandCard {
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(var(--brand-color-rgb), 0.2);
+  transition: all 0.3s ease;
+}
+
+.brandCard:hover {
+  border-color: var(--brand-color);
+  box-shadow: 0 0 20px rgba(var(--brand-color-rgb), 0.15);
+}
+
+.brandLogoContainer {
+  margin-bottom: var(--space-md);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100px;
+}
+
+.brandLogo {
+  max-width: 100%;
+  height: auto;
+  max-height: 100px;
+  object-fit: contain;
+}
+
+.brandHeader {
+  margin-bottom: var(--space-md);
+}
+
+.brandName {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-xs);
+  color: var(--color-text);
+}
+
+.brandTagline {
+  font-size: 0.9rem;
+  color: var(--brand-color);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.brandDescription {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-md);
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+.brandStatements {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: var(--space-md);
+}
+
+.statement {
+  display: flex;
+  flex-direction: column;
+}
+
+.statementLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-accent);
+  margin-bottom: var(--space-xs);
+  font-weight: 700;
+}
+
+.statementText {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Synergies Section */
+.synergiesSection {
+  padding: var(--space-2xl) 0;
+  background: linear-gradient(180deg, rgba(255, 184, 28, 0.05) 0%, transparent 100%);
+}
+
+.synergiesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-lg);
+}
+
+.synergyCard {
+  padding: var(--space-lg);
+}
+
+.synergyTitle {
+  font-size: 1.125rem;
+  margin-bottom: var(--space-sm);
+  color: var(--color-accent);
+}
+
+.synergyBody {
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+/* CTA Section */
+.ctaSection {
+  padding: var(--space-2xl) 0;
+}
+
+.ctaCard {
+  padding: var(--space-2xl);
+  text-align: center;
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(255, 184, 28, 0.1) 100%);
+}
+
+.ctaTitle {
+  margin-bottom: var(--space-md);
+}
+
+.ctaBody {
+  font-size: 1.1rem;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-lg);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: var(--space-sm) var(--space-lg);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent-warm));
+  color: #fff;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .valuesGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .synergiesGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .brandCard {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    padding: var(--space-xl) 0;
+  }
+
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroDescription {
+    font-size: 1rem;
+  }
+
+  .valuesGrid,
+  .synergiesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .brandsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .ctaCard {
+    padding: var(--space-lg);
+  }
+
+  .ctaTitle {
+    font-size: 1.5rem;
+  }
+}

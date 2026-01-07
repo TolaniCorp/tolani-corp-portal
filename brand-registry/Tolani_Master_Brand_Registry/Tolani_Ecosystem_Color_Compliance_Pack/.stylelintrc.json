@@ -1,0 +1,10 @@
+{
+  "rules": {
+    "color-no-invalid-hex": true,
+    "declaration-property-value-disallowed-list": {
+      "/^color$/": [
+        "#(?!0B0B0B|FFFFFF|E5E5E5|6B7280|D4AF37|2E8B8B|E10600|2B2B2B|00B4D8|2ECC71|3A7CA5|EFE6D8|4BA3A3).*/"
+      ]
+    }
+  }
+}
