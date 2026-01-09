@@ -30,14 +30,14 @@ export default function Navbar() {
             <div className={styles.container}>
                 <a href="#" className={styles.logo}>
                     <Image
-                        src="/assets/logo.png"
+                        src="/assets/foundation/tolani-logo.svg"
                         alt="Tolani Corp"
-                        width={300}
-                        height={84}
+                        width={50}
+                        height={46}
                         priority
-                        sizes="(max-width: 968px) 260px, 300px"
                         style={{ objectFit: 'contain' }}
                     />
+                    <span className={styles.logoText}>Tolani Corp</span>
                 </a>
 
                 <div className={`${styles.navLinks} ${menuOpen ? styles.open : ''}`}>

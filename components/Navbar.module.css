@@ -28,18 +28,33 @@
 .logo {
     display: flex;
     align-items: center;
+    gap: 0.75rem;
     transition: opacity 0.3s ease;
+    text-decoration: none;
 }
 
 .logo :global(img) {
-    height: 56px;
+    height: 46px;
     width: auto;
-    max-width: 300px;
 }
 
 .navbar.scrolled .logo :global(img) {
-    height: 48px;
-    max-width: 260px;
+    height: 40px;
+}
+
+.logoText {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.02em;
+    background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.navbar.scrolled .logoText {
+    font-size: 1.125rem;
 }
 
 .logo:hover {
