@@ -1,0 +1,13 @@
+<svg width="512" height="144" viewBox="0 0 512 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1_2)">
+<path d="M72 18L24.5 40.75V86.25L72 109L119.5 86.25V40.75L72 18Z" stroke="#E10600" stroke-width="8"/>
+<path d="M24.5 40.75L72 63.5L119.5 40.75" stroke="#E10600" stroke-width="8"/>
+<path d="M72 109V63.5" stroke="#E10600" stroke-width="8"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="64" font-weight="bold" letter-spacing="0em"><tspan x="160" y="86.5">Tolani Corp</tspan></text>
+</g>
+<defs>
+<clipPath id="clip0_1_2">
+<rect width="512" height="144" fill="white"/>
+</clipPath>
+</defs>
+</svg>
