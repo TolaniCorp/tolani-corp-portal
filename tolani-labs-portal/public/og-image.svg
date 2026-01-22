@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Tolani Labs Open Graph Image - 1200x630 for social sharing -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a"/>
+      <stop offset="100%" style="stop-color:#2B2B2B"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg-gradient)"/>
+  
+  <!-- Accent line -->
+  <rect x="0" y="0" width="8" height="630" fill="#E10600"/>
+  
+  <!-- Logo icon (simplified) -->
+  <g transform="translate(100, 165) scale(0.6)" fill="#E10600">
+    <path d="M253.18 440.83 c-0.25 -0.22 -0.22 -69.03 0.03 -69.18 0.10 -0.05 1.38 -0.25 2.80 -0.40 2.13 -0.22 2.97 -0.45 4.50 -1.17 1.73 -0.82 2.45 -1.48 10.57 -9.55 9.88 -9.82 10.65 -10.80 11.35 -14.10 0.40 -2 0.40 -2.20 0 -4.13 -0.25 -1.10 -0.73 -2.55 -1.10 -3.22 -0.90 -1.67 -18.75 -19.50 -20.40 -20.40 -1.63 -0.90 -4.65 -1.50 -6.35 -1.27 l-1.33 0.15 0 -19.70 0 -19.73 5.90 -5.88 c3.22 -3.22 6.28 -6.40 6.75 -7.03 2.65 -3.60 2.80 -8.43 0.35 -12.20 -0.40 -0.63 -3.50 -3.90 -6.88 -7.28 l-6.13 -6.13 0 -21.30 0 -21.33 0.70 -0.15 c2.22 -0.50 2.95 -0.98 6.32 -4.28 4.15 -4.05 4.85 -5.18 4.85 -7.70 0 -2.40 -0.52 -3.22 -4.93 -7.53 -3.10 -3.05 -3.75 -3.55 -4.93 -3.92 -0.73 -0.22 -1.50 -0.43 -1.67 -0.43 -0.20 0 -0.35 -0.15 -0.35 -0.30 -0.03 -0.17 -0.05 -1.77 -0.08 -3.58 l-0.05 -3.25 -32.75 -0.05 c-18 -0.05 -32.88 -0.08 -33.03 -0.08 -0.15 0 -0.57 -0.60 -0.98 -1.30 -0.88 -1.65 -7.97 -8.82 -9.75 -9.85 -1.05 -0.60 -1.50 -0.73 -3.13 -0.73 -1.50 0 -2.13 0.13 -3.03 0.60 -1.48 0.75 -9.18 8.43 -10.15 10.15 l-0.73 1.25 -8.75 0.17 c-4.80 0.10 -11.02 0.28 -13.80 0.38 -2.80 0.13 -5.15 0.15 -5.20 0.10 -0.05 -0.05 -0.10 -2.25 -0.10 -4.90 l0 -4.78 12.10 -12.10 c12.73 -12.73 13.60 -13.75 14.70 -16.95 0.73 -2.15 0.77 -5.72 0.10 -7.80 -1.05 -3.13 -1.45 -3.60 -14.45 -16.63 l-12.45 -12.52 0.05 -9.85 0.08 -9.88 180.50 0 180.50 0 0 47.25 0 47.25 -60.38 0.13 -60.38 0.13 -0.13 137.50 -0.13 137.50 -59.28 0.08 c-32.60 0.03 -59.35 -0.03 -59.42 -0.13z"/>
+  </g>
+  
+  <!-- Text content -->
+  <text x="480" y="260" font-family="system-ui, -apple-system, sans-serif" font-size="72" font-weight="700" fill="#FFFFFF">Tolani Labs</text>
+  <text x="480" y="340" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="400" fill="#999999">Learn. Earn. Build.</text>
+  
+  <!-- Tagline -->
+  <text x="480" y="440" font-family="system-ui, -apple-system, sans-serif" font-size="24" fill="#666666">Master blockchain, AI &amp; cybersecurity with IBM SkillsBuild</text>
+  <text x="480" y="480" font-family="system-ui, -apple-system, sans-serif" font-size="24" fill="#666666">Earn uTUT tokens for every milestone</text>
+  
+  <!-- URL -->
+  <text x="480" y="560" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="#E10600">tolanilabs.io</text>
+</svg>

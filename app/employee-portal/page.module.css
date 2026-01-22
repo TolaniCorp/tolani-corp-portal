@@ -58,6 +58,55 @@
   backdrop-filter: blur(20px);
 }
 
+.setupCard {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  backdrop-filter: blur(20px);
+  text-align: center;
+}
+
+.setupCard h2 {
+  color: #fff;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.setupCard p {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1rem;
+}
+
+.setupCard ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.setupCard li {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0.5rem;
+}
+
+.setupCard code {
+  background: rgba(139, 92, 246, 0.2);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-family: monospace;
+  font-size: 0.85rem;
+  color: #a78bfa;
+}
+
+.setupCard a {
+  color: #8b5cf6;
+  text-decoration: none;
+}
+
+.setupCard a:hover {
+  text-decoration: underline;
+}
+
 .loginTitle {
   font-size: 1.5rem;
   font-weight: 600;
@@ -306,6 +355,93 @@
 
 .footerLink:hover {
   text-decoration: underline;
+}
+
+.footerCopyright {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+/* Loading State */
+.loadingContainer {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 50%, #0f0f1a 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.loadingSpinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(139, 92, 246, 0.2);
+  border-top-color: #8b5cf6;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Clerk Container */
+.clerkContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.clerkRoot {
+  width: 100%;
+}
+
+.clerkCard {
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4) !important;
+}
+
+.clerkTitle {
+  color: #fff !important;
+}
+
+.clerkSubtitle {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.clerkSocialButton {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  color: #fff !important;
+}
+
+.clerkSocialButton:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.clerkSubmitButton {
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed) !important;
+}
+
+.clerkSubmitButton:hover {
+  background: linear-gradient(135deg, #7c3aed, #6d28d9) !important;
+}
+
+.clerkFooter {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.quickLinksSubtitle {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 640px) {

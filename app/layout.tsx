@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { ConvexClerkProvider } from "@/components/providers/ConvexClerkProvider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -45,7 +46,9 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/assets/foundation/favicon-lockup-180.png" />
       </head>
       <body className={inter.variable}>
-        {children}
+        <ConvexClerkProvider>
+          {children}
+        </ConvexClerkProvider>
       </body>
     </html>
   );

@@ -1,168 +1,120 @@
-import { Metadata } from "next";
+"use client";
+
+import dynamic from "next/dynamic";
 import styles from "./page.module.css";
 
-export const metadata: Metadata = {
-  title: "Employee Portal | Tolani Corp",
-  description: "Secure employee portal for Tolani Corp team members. Access HR resources, benefits, payroll, and internal tools.",
-};
+// Check if Clerk is configured
+const isClerkConfigured = typeof window !== "undefined" 
+  ? !!process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY?.startsWith("pk_")
+  : !!process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY?.startsWith("pk_");
+
+// Dynamically import sign-in content to avoid SSR issues with Clerk
+const SignInContent = dynamic(() => import("./SignInContent"), {
+  ssr: false,
+  loading: () => (
+    <div className={styles.loadingContainer}>
+      <div className={styles.loadingSpinner} />
+      <p>Loading...</p>
+    </div>
+  ),
+});
 
 const quickLinks = [
   {
     icon: "📊",
     title: "HR Dashboard",
     description: "View pay stubs, benefits, and personal information",
-    href: "#",
+    href: "/employee-portal/dashboard",
   },
   {
     icon: "📅",
     title: "Time & Attendance",
     description: "Submit time sheets, request PTO, view schedules",
-    href: "#",
+    href: "/employee-portal/time-off",
   },
   {
     icon: "📚",
     title: "Learning Center",
     description: "Access training materials and certifications",
-    href: "#",
+    href: "/employee-portal/learning",
   },
   {
     icon: "🏥",
     title: "Benefits Portal",
     description: "Manage health insurance, 401k, and wellness programs",
-    href: "#",
+    href: "/employee-portal/benefits",
   },
   {
     icon: "💬",
     title: "IT Support",
     description: "Submit tickets and get technical assistance",
-    href: "#",
+    href: "/employee-portal/support",
   },
   {
     icon: "📋",
     title: "Company Directory",
     description: "Find colleagues and organizational charts",
-    href: "#",
+    href: "/employee-portal/directory",
   },
 ];
 
 export default function EmployeePortalPage() {
-  return (
-    <div className={styles.container}>
-      <section className={styles.hero}>
-        <span className={styles.badge}>🔐 Secure Access</span>
-        <h1 className={styles.title}>
-          Employee <span className={styles.titleAccent}>Portal</span>
-        </h1>
-        <p className={styles.subtitle}>
-          Welcome to the Tolani Corp employee portal. Access your HR resources, 
-          benefits, payroll, and internal tools securely.
-        </p>
-      </section>
-
-      <section className={styles.loginSection}>
-        <div className={styles.loginCard}>
-          <h2 className={styles.loginTitle}>Sign In</h2>
-          <p className={styles.loginSubtitle}>
-            Use your Tolani Corp credentials
+  // Show setup message if Clerk is not configured
+  if (!isClerkConfigured) {
+    return (
+      <div className={styles.container}>
+        <section className={styles.hero}>
+          <span className={styles.badge}>🔧 Setup Required</span>
+          <h1 className={styles.title}>
+            Employee <span className={styles.titleAccent}>Portal</span>
+          </h1>
+          <p className={styles.subtitle}>
+            The employee portal authentication is not yet configured. 
+            Please set up Clerk authentication to enable sign-in.
           </p>
+        </section>
 
-          <form className={styles.form}>
-            <div className={styles.inputGroup}>
-              <label htmlFor="email" className={styles.label}>
-                Work Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="you@tolanicorp.us"
-                className={styles.input}
-                required
-              />
-            </div>
-
-            <div className={styles.inputGroup}>
-              <label htmlFor="password" className={styles.label}>
-                Password
-              </label>
-              <input
-                type="password"
-                id="password"
-                name="password"
-                placeholder="••••••••"
-                className={styles.input}
-                required
-              />
-            </div>
-
-            <div className={styles.rememberRow}>
-              <label className={styles.checkboxLabel}>
-                <input type="checkbox" className={styles.checkbox} />
-                Remember me
-              </label>
-              <a href="#" className={styles.forgotLink}>
-                Forgot password?
+        <section className={styles.loginSection}>
+          <div className={styles.setupCard}>
+            <h2>Configuration Required</h2>
+            <p>To enable employee authentication, add the following environment variables:</p>
+            <ul>
+              <li><code>NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY</code></li>
+              <li><code>CLERK_SECRET_KEY</code></li>
+            </ul>
+            <p>
+              Get your keys from{" "}
+              <a href="https://dashboard.clerk.com" target="_blank" rel="noopener noreferrer">
+                Clerk Dashboard
               </a>
-            </div>
-
-            <button type="submit" className={styles.submitButton}>
-              Sign In
-            </button>
-          </form>
-
-          <div className={styles.divider}>
-            <div className={styles.dividerLine} />
-            <span className={styles.dividerText}>or continue with</span>
-            <div className={styles.dividerLine} />
+            </p>
           </div>
+        </section>
 
-          <div className={styles.ssoButtons}>
-            <a href="#" className={styles.ssoButton}>
-              <span className={styles.ssoIcon}>🔑</span>
-              Sign in with Microsoft Entra ID
-            </a>
-            <a href="#" className={styles.ssoButton}>
-              <span className={styles.ssoIcon}>🌐</span>
-              Sign in with Google Workspace
-            </a>
-          </div>
-
-          <p className={styles.helpText}>
-            Need help?{" "}
-            <a href="mailto:it@tolanicorp.us" className={styles.helpLink}>
-              Contact IT Support
-            </a>
-          </p>
-        </div>
-      </section>
-
-      <section className={styles.quickLinks}>
-        <h2 className={styles.quickLinksTitle}>Quick Access</h2>
-        <div className={styles.linksGrid}>
-          {quickLinks.map((link, index) => (
-            <a key={index} href={link.href} className={styles.linkCard}>
-              <span className={styles.linkIcon}>{link.icon}</span>
-              <div className={styles.linkContent}>
-                <h3>{link.title}</h3>
-                <p>{link.description}</p>
+        <section className={styles.quickLinks}>
+          <h2 className={styles.quickLinksTitle}>Features Preview</h2>
+          <p className={styles.quickLinksSubtitle}>These features will be available after setup</p>
+          <div className={styles.linksGrid}>
+            {quickLinks.map((link, index) => (
+              <div key={index} className={styles.linkCard}>
+                <span className={styles.linkIcon}>{link.icon}</span>
+                <div className={styles.linkContent}>
+                  <h3>{link.title}</h3>
+                  <p>{link.description}</p>
+                </div>
               </div>
-            </a>
-          ))}
-        </div>
-      </section>
+            ))}
+          </div>
+        </section>
 
-      <footer className={styles.footer}>
-        <p className={styles.footerText}>
-          © {new Date().getFullYear()} Tolani Corp. All rights reserved.{" "}
-          <a href="/privacy" className={styles.footerLink}>
-            Privacy Policy
-          </a>{" "}
-          ·{" "}
-          <a href="/terms" className={styles.footerLink}>
-            Terms of Service
-          </a>
-        </p>
-      </footer>
-    </div>
-  );
+        <footer className={styles.footer}>
+          <p className={styles.footerCopyright}>
+            © {new Date().getFullYear()} Tolani Corp. All rights reserved.
+          </p>
+        </footer>
+      </div>
+    );
+  }
+
+  return <SignInContent />;
 }

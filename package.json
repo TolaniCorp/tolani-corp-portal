@@ -12,13 +12,16 @@
     "generate:foundation-lockup": "node scripts/generate-foundation-lockup.mjs"
   },
   "dependencies": {
+    "@clerk/nextjs": "^6.36.7",
     "@resvg/resvg-js": "^2.6.2",
     "canvas": "^3.2.0",
+    "convex": "^1.31.3",
     "next": "16.1.1",
     "nodemailer": "^7.0.12",
     "react": "19.2.3",
     "react-dom": "19.2.3",
-    "sharp": "^0.33.5"
+    "sharp": "^0.33.5",
+    "svix": "^1.84.1"
   },
   "devDependencies": {
     "@types/node": "^20",

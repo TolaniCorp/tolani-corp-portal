@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Penrose impossible triangle - light version for dark backgrounds -->
+  <!-- White with cyan accent -->
+  <g fill="none" stroke-width="12" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Left vertical segment -->
+    <path d="M 60 150 L 60 80 L 100 35" stroke="#ffffff"/>
+    
+    <!-- Right side going down -->
+    <path d="M 100 35 L 140 80 L 140 150" stroke="#ffffff"/>
+    
+    <!-- Bottom horizontal -->
+    <path d="M 140 150 L 60 150" stroke="#ffffff"/>
+    
+    <!-- Inner impossible connections creating the illusion -->
+    <path d="M 60 120 L 100 75 L 100 150" stroke="#ffffff"/>
+    <path d="M 140 120 L 100 75" stroke="#ffffff"/>
+    
+    <!-- Red accent point at top vertex -->
+    <circle cx="100" cy="35" r="10" fill="#E74C3C" stroke="none"/>
+  </g>
+</svg>

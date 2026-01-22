@@ -1,0 +1,138 @@
+"use client";
+
+import { SignIn, useAuth } from "@clerk/nextjs";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
+import styles from "./page.module.css";
+
+const quickLinks = [
+  {
+    icon: "📊",
+    title: "HR Dashboard",
+    description: "View pay stubs, benefits, and personal information",
+    href: "/employee-portal/dashboard",
+  },
+  {
+    icon: "📅",
+    title: "Time & Attendance",
+    description: "Submit time sheets, request PTO, view schedules",
+    href: "/employee-portal/time-off",
+  },
+  {
+    icon: "📚",
+    title: "Learning Center",
+    description: "Access training materials and certifications",
+    href: "/employee-portal/learning",
+  },
+  {
+    icon: "🏥",
+    title: "Benefits Portal",
+    description: "Manage health insurance, 401k, and wellness programs",
+    href: "/employee-portal/benefits",
+  },
+  {
+    icon: "💬",
+    title: "IT Support",
+    description: "Submit tickets and get technical assistance",
+    href: "/employee-portal/support",
+  },
+  {
+    icon: "📋",
+    title: "Company Directory",
+    description: "Find colleagues and organizational charts",
+    href: "/employee-portal/directory",
+  },
+];
+
+export default function SignInContent() {
+  const { isSignedIn, isLoaded } = useAuth();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (isLoaded && isSignedIn) {
+      router.push("/employee-portal/dashboard");
+    }
+  }, [isLoaded, isSignedIn, router]);
+
+  if (!isLoaded) {
+    return (
+      <div className={styles.loadingContainer}>
+        <div className={styles.loadingSpinner} />
+        <p>Loading...</p>
+      </div>
+    );
+  }
+
+  if (isSignedIn) {
+    return (
+      <div className={styles.loadingContainer}>
+        <div className={styles.loadingSpinner} />
+        <p>Redirecting to dashboard...</p>
+      </div>
+    );
+  }
+
+  return (
+    <div className={styles.container}>
+      <section className={styles.hero}>
+        <span className={styles.badge}>🔐 Secure Access</span>
+        <h1 className={styles.title}>
+          Employee <span className={styles.titleAccent}>Portal</span>
+        </h1>
+        <p className={styles.subtitle}>
+          Welcome to the Tolani Corp employee portal. Access your HR resources, 
+          benefits, payroll, and internal tools securely.
+        </p>
+      </section>
+
+      <section className={styles.loginSection}>
+        <div className={styles.clerkContainer}>
+          <SignIn 
+            appearance={{
+              elements: {
+                rootBox: styles.clerkRoot,
+                card: styles.clerkCard,
+                headerTitle: styles.clerkTitle,
+                headerSubtitle: styles.clerkSubtitle,
+                socialButtonsBlockButton: styles.clerkSocialButton,
+                formButtonPrimary: styles.clerkSubmitButton,
+                footerAction: styles.clerkFooter,
+              },
+            }}
+            routing="hash"
+            forceRedirectUrl="/employee-portal/dashboard"
+            signUpUrl="/employee-portal/sign-up"
+          />
+        </div>
+      </section>
+
+      <section className={styles.quickLinks}>
+        <h2 className={styles.quickLinksTitle}>Quick Access</h2>
+        <p className={styles.quickLinksSubtitle}>Sign in to access these features</p>
+        <div className={styles.linksGrid}>
+          {quickLinks.map((link, index) => (
+            <div key={index} className={styles.linkCard}>
+              <span className={styles.linkIcon}>{link.icon}</span>
+              <div className={styles.linkContent}>
+                <h3>{link.title}</h3>
+                <p>{link.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <footer className={styles.footer}>
+        <p>
+          Need help?{" "}
+          <a href="mailto:it@tolanicorp.us" className={styles.helpLink}>
+            Contact IT Support
+          </a>
+        </p>
+        <p className={styles.footerCopyright}>
+          © {new Date().getFullYear()} Tolani Corp. All rights reserved.
+        </p>
+      </footer>
+    </div>
+  );
+}
