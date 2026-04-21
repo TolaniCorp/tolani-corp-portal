@@ -1,0 +1,108 @@
+{
+  "project_info": {
+    "title": "TSG: The Tolani Utility Token (TUT)",
+    "created": 1776723929.6106281,
+    "last_updated": 1776724937.8498456,
+    "total_slides": 8
+  },
+  "slides": [
+    {
+      "id": "front_page",
+      "state": "edited",
+      "pageNum": 1
+    },
+    {
+      "id": "ecosystem_overview",
+      "state": "edited",
+      "pageNum": 2
+    },
+    {
+      "id": "tokenomics_utility",
+      "state": "edited",
+      "pageNum": 3
+    },
+    {
+      "id": "governance_participation",
+      "state": "edited",
+      "pageNum": 4
+    },
+    {
+      "id": "gasless_onboarding",
+      "state": "edited",
+      "pageNum": 5
+    },
+    {
+      "id": "security_compliance",
+      "state": "edited",
+      "pageNum": 6
+    },
+    {
+      "id": "roadmap_future",
+      "state": "edited",
+      "pageNum": 7
+    },
+    {
+      "id": "closing_action",
+      "state": "edited",
+      "pageNum": 8
+    }
+  ],
+  "outline": [
+    {
+      "id": "front_page",
+      "title": "TSG: The Tolani Utility Token (TUT)",
+      "summary": "Introduction to TUT as the utility token for the Tolani ecosystem.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "ecosystem_overview",
+      "title": "The Heart of the Ecosystem",
+      "summary": "Overview of how TUT connects the different entities within the Tolani ecosystem.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "tokenomics_utility",
+      "title": "Utility Without Investment",
+      "summary": "Explanation of the non-investment nature of TUT and its core utilities.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "governance_participation",
+      "title": "Community-Led Growth",
+      "summary": "How users can participate in DAO governance using TUT.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "gasless_onboarding",
+      "title": "Removing the Barriers to Entry",
+      "summary": "Details on the gasless onboarding process and the TUT faucet.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "security_compliance",
+      "title": "Built on Trust and Rigor",
+      "summary": "Overview of the security audits and legal compliance of the token.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "roadmap_future",
+      "title": "Scaling the Ecosystem",
+      "summary": "Future plans for TUT expansion and new utility use cases.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "closing_action",
+      "title": "Join the Tolani World",
+      "summary": "Final call to action and next steps for new users.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    }
+  ]
+}

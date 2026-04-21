@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #000000;
+            color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            border: 10px solid #D4AF37;
+        }
+        .header {
+            padding-top: 40px;
+            padding-left: 60px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 48px;
+            color: #D4AF37;
+            text-transform: uppercase;
+        }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            padding-left: 60px;
+            padding-right: 60px;
+            flex-grow: 1;
+        }
+        .portfolio-card {
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid #D4AF37;
+            padding-top: 25px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .card-header i {
+            font-size: 28px;
+            color: #D4AF37;
+        }
+        .card-header h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 22px;
+            color: #D4AF37;
+            text-transform: uppercase;
+        }
+        .card-content p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #E5E5E5;
+        }
+        .entity-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .entity-tag {
+            background: rgba(229, 198, 75, 0.1);
+            border: 1px solid #D4AF37;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 12px;
+            font-weight: 700;
+            color: #D4AF37;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>A Diverse & Synergistic Portfolio</h2>
+        </div>
+        <div class="portfolio-grid">
+            <div class="portfolio-card">
+                <div class="card-header">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>Gaming & Entertainment</h3>
+                </div>
+                <div class="card-content">
+                    <p>Revolutionizing the gaming industry with data-driven fair pricing, loyalty engines, and blockchain-based settlement.</p>
+                    <div class="entity-list">
+                        <span class="entity-tag">BettorsACE</span>
+                        <span class="entity-tag">TC Gaming</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="card-header">
+                    <i class="fas fa-robot"></i>
+                    <h3>AI & Engineering</h3>
+                </div>
+                <div class="card-content">
+                    <p>Architecting autonomous AI agent fleets for software engineering, cybersecurity, and platform maintenance.</p>
+                    <div class="entity-list">
+                        <span class="entity-tag">DevBot (DEBO)</span>
+                        <span class="entity-tag">Tolani Corp</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="card-header">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Workforce & Travel</h3>
+                </div>
+                <div class="card-content">
+                    <p>Providing end-to-end solutions for global workforce management, recruitment, and token-gated travel experiences.</p>
+                    <div class="entity-list">
+                        <span class="entity-tag">Listo</span>
+                        <span class="entity-tag">Hook Travel</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="card-header">
+                    <i class="fas fa-users-cog"></i>
+                    <h3>Governance & Finance</h3>
+                </div>
+                <div class="card-content">
+                    <p>Empowering the ecosystem with decentralized governance, treasury management, and the TUT utility token.</p>
+                    <div class="entity-list">
+                        <span class="entity-tag">Tolani DAO</span>
+                        <span class="entity-tag">TSG (TUT)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

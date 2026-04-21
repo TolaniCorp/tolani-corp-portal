@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Space+Grotesk:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body { margin: 0; }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #000000;
+        background-image: linear-gradient(rgba(0, 180, 216, 0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 180, 216, 0.02) 1px, transparent 1px);
+        background-size: 40px 40px;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Inter', sans-serif;
+        color: #E5E5E5;
+      }
+      .header {
+        padding-top: 60px;
+        padding-left: 60px;
+      }
+      .page-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 32px;
+        color: #FFB800;
+        text-transform: uppercase;
+        border-left: 4px solid #2ECC71;
+        padding-left: 20px;
+      }
+      .content-grid {
+        display: grid;
+        grid-template-columns: 1.4fr 1fr;
+        gap: 40px;
+        padding-top: 40px;
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+      .image-container img {
+        width: 100%;
+        height: 450px;
+        object-fit: contain;
+        border: 1px solid #000000;
+      }
+      .agent-list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      .agent-item {
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid #000000;
+        padding-top: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        min-height: 90px;
+      }
+      .agent-item h3 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 18px;
+        color: #FFB800;
+        margin-bottom: 5px;
+      }
+      .agent-item p {
+        font-size: 14px;
+        color: #A0A0B0;
+        line-height: 1.4;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1 class="page-title">The DevTown Ecosystem</h1>
+        </div>
+        <div class="content-grid">
+            <div class="image-container">
+                <img src="/home/ubuntu/devbot_onboarding_presentation/assets/devbot_ecosystem.png" alt="DevBot Ecosystem Diagram">
+            </div>
+            <div class="agent-list">
+                <div class="agent-item">
+                    <h3>DevBot</h3>
+                    <p>Autonomous AI engineer. Lives in Slack, writes code, ships PRs.</p>
+                </div>
+                <div class="agent-item">
+                    <h3>DevTown</h3>
+                    <p>Multi-agent fleet management. Polecats, Convoys, and the MEOW pipeline.</p>
+                </div>
+                <div class="agent-item">
+                    <h3>DEBO</h3>
+                    <p>Mission Command Center. Terminal-native workstation for fleet orchestration.</p>
+                </div>
+                <div class="agent-item">
+                    <h3>NATT</h3>
+                    <p>Ghost Agent. Authorized penetration testing and OSINT operations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

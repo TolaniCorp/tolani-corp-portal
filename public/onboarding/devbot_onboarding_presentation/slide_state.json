@@ -1,0 +1,108 @@
+{
+  "project_info": {
+    "title": "DevBot (DEBO) Onboarding",
+    "created": 1776714099.872788,
+    "last_updated": 1776717095.3503387,
+    "total_slides": 8
+  },
+  "slides": [
+    {
+      "id": "cover",
+      "state": "edited",
+      "pageNum": 1
+    },
+    {
+      "id": "mission_vision",
+      "state": "edited",
+      "pageNum": 2
+    },
+    {
+      "id": "ecosystem_devtown",
+      "state": "edited",
+      "pageNum": 3
+    },
+    {
+      "id": "architecture_stack",
+      "state": "edited",
+      "pageNum": 4
+    },
+    {
+      "id": "product_strategy",
+      "state": "edited",
+      "pageNum": 5
+    },
+    {
+      "id": "ops_security",
+      "state": "edited",
+      "pageNum": 6
+    },
+    {
+      "id": "ramp_plan",
+      "state": "edited",
+      "pageNum": 7
+    },
+    {
+      "id": "closing",
+      "state": "edited",
+      "pageNum": 8
+    }
+  ],
+  "outline": [
+    {
+      "id": "cover",
+      "title": "DevBot (DEBO) Onboarding",
+      "summary": "Cover slide with the mission: Built for the future of software development.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "mission_vision",
+      "title": "Mission & Vision",
+      "summary": "Solving the grunt work of software engineering with autonomous AI.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "ecosystem_devtown",
+      "title": "The DevTown Ecosystem",
+      "summary": "Overview of DevBot, DevTown, DEBO, and NATT agents.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "architecture_stack",
+      "title": "Platform Architecture",
+      "summary": "Technical stack: TypeScript, Claude AI, and the reasoning engine.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "product_strategy",
+      "title": "Product Strategy & Roadmap",
+      "summary": "GTM, monetization, and the North Star metric.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "ops_security",
+      "title": "Operations & Security",
+      "summary": "Incident response, secret hygiene, and release guardrails.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "ramp_plan",
+      "title": "Your First 90 Days",
+      "summary": "30/60/90 day milestones for new hires.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "closing",
+      "title": "Welcome to the Fleet",
+      "summary": "Closing slide with contact information.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    }
+  ]
+}

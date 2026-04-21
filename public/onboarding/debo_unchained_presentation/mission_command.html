@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+      body { margin: 0; }
+      .slide-container { 
+        width: 1280px; 
+        min-height: 720px; 
+        box-sizing: border-box; 
+        background: #000000; 
+        color: #FFFFFF; 
+        font-family: 'Inter', sans-serif;
+        display: flex;
+        flex-direction: column;
+        padding-top: 60px;
+        position: relative;
+        overflow: hidden;
+      }
+      .header-section {
+        padding-left: 80px;
+        margin-bottom: 20px;
+      }
+      .header {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 48px;
+        color: #FFB800;
+        text-transform: uppercase;
+        margin: 0;
+      }
+      .main-content {
+        display: flex;
+        padding-left: 80px;
+        padding-right: 80px;
+        justify-content: space-between;
+      }
+      .terminal-view {
+        width: 550px;
+        height: 392px;
+        background: #1A1A1A;
+        border: 1px solid #FFB800;
+        font-family: 'JetBrains Mono', monospace;
+        padding-top: 12px;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+      }
+      .terminal-header {
+        color: #00FF41;
+        margin-bottom: 12px;
+        font-size: 14px;
+      }
+      .terminal-line {
+        font-size: 14px;
+        margin-bottom: 6px;
+        line-height: 1.4;
+      }
+      .cmd { color: #FFB800; }
+      .output { color: #FFFFFF; opacity: 0.8; }
+      .alert { color: #FFB800; }
+      .map-view {
+        width: 500px;
+        height: 392px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .map-image {
+        width: 500px;
+        height: 292px;
+        object-fit: cover;
+        border: 1px solid rgba(225, 6, 0, 0.3);
+      }
+      .feature-list {
+        margin-top: 12px;
+        width: 100%;
+      }
+      .feature-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+      }
+      .feature-icon {
+        color: #FFB800;
+        margin-right: 15px;
+        font-size: 18px;
+      }
+      .feature-text {
+        font-size: 18px;
+        font-weight: 500;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header-section">
+            <h1 class="header">Mission Command: The Unchained Terminal</h1>
+        </div>
+        <div class="main-content">
+            <div class="terminal-view">
+                <div class="terminal-header">UNCHAINED_OS v4.2.0 - ACTIVE SESSION</div>
+                <div class="terminal-line"><span class="cmd">debo@unchained:~$</span> <span class="output">natt --scan --target internal-network</span></div>
+                <div class="terminal-line"><span class="output">[INFO] Initializing Ghost Fleet...</span></div>
+                <div class="terminal-line"><span class="output">[INFO] 42 Agents deployed to global nodes.</span></div>
+                <div class="terminal-line"><span class="alert">[ALERT] Vulnerability detected: CVE-2024-3845</span></div>
+                <div class="terminal-line"><span class="cmd">debo@unchained:~$</span> <span class="output">exploit --verify --id CVE-2024-3845</span></div>
+                <div class="terminal-line"><span class="output">[PROGRESS] Executing sandboxed payload...</span></div>
+                <div class="terminal-line"><span class="output">[SUCCESS] Exploit verified. Generating report.</span></div>
+                <div class="terminal-line"><span class="cmd">debo@unchained:~$</span> <span class="cursor" style="display:inline-block; width:8px; height:15px; background:#00FF41; vertical-align:middle;"></span></div>
+            </div>
+            <div class="map-view">
+                <img src="/home/ubuntu/debo_unchained_dashboard.png" class="map-image" alt="Global Threat Map">
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <i class="fas fa-terminal feature-icon"></i>
+                        <span class="feature-text">Direct Agent Orchestration</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-map-marked-alt feature-icon"></i>
+                        <span class="feature-text">Real-time Global Threat Mapping</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-flask feature-icon"></i>
+                        <span class="feature-text">Sandboxed Exploit Lab Environment</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

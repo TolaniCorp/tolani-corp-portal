@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #000000;
+            color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            border: 10px solid #D4AF37;
+        }
+        .header {
+            padding-top: 40px;
+            padding-left: 60px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 48px;
+            color: #D4AF37;
+            text-transform: uppercase;
+        }
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            padding-left: 60px;
+            padding-right: 60px;
+            flex-grow: 1;
+        }
+        .revenue-streams {
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid #D4AF37;
+            padding-top: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 30px;
+        }
+        .revenue-streams h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            color: #D4AF37;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+        .chart-row {
+            margin-bottom: 20px;
+        }
+        .chart-label {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #D4AF37;
+        }
+        .chart-bar-bg {
+            width: 100%;
+            height: 12px;
+            background: rgba(0, 175, 175, 0.1);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        .chart-bar-fill {
+            height: 100%;
+            background: #D4AF37;
+        }
+        .growth-targets {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .target-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: rgba(0, 175, 175, 0.05);
+        }
+        .target-table th, .target-table td {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(0, 115, 115, 0.3);
+        }
+        .target-table th {
+            font-family: 'Montserrat', sans-serif;
+            color: #D4AF37;
+            font-size: 14px;
+            text-transform: uppercase;
+            background: rgba(0, 115, 115, 0.3);
+        }
+        .target-table td {
+            font-size: 16px;
+        }
+        .highlight {
+            color: #D4AF37;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>Driving Revenue & Growth</h2>
+        </div>
+        <div class="main-content">
+            <div class="revenue-streams">
+                <h3>Revenue Distribution</h3>
+                <div class="chart-row">
+                    <div class="chart-label"><span>B2B SaaS Subscriptions</span><span>45%</span></div>
+                    <div class="chart-bar-bg"><div class="chart-bar-fill" style="width: 45%;"></div></div>
+                </div>
+                <div class="chart-row">
+                    <div class="chart-label"><span>Ecosystem Transaction Fees</span><span>30%</span></div>
+                    <div class="chart-bar-bg"><div class="chart-bar-fill" style="width: 30%;"></div></div>
+                </div>
+                <div class="chart-row">
+                    <div class="chart-label"><span>Enterprise Consulting & Integration</span><span>15%</span></div>
+                    <div class="chart-bar-bg"><div class="chart-bar-fill" style="width: 15%;"></div></div>
+                </div>
+                <div class="chart-row">
+                    <div class="chart-label"><span>Data & Intelligence Licensing</span><span>10%</span></div>
+                    <div class="chart-bar-bg"><div class="chart-bar-fill" style="width: 10%;"></div></div>
+                </div>
+            </div>
+            <div class="growth-targets">
+                <table class="target-table">
+                    <thead>
+                        <tr>
+                            <th>Metric</th>
+                            <th>2026 Target</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Active Ecosystem Users</td>
+                            <td><span class="highlight">500,000+</span></td>
+                        </tr>
+                        <tr>
+                            <td>Corporate Partnerships</td>
+                            <td><span class="highlight">50+</span> Global Firms</td>
+                        </tr>
+                        <tr>
+                            <td>TUT Transaction Volume</td>
+                            <td><span class="highlight">$100M+</span> Annually</td>
+                        </tr>
+                        <tr>
+                            <td>Subsidiary Profitability</td>
+                            <td><span class="highlight">80%</span> of Portfolio</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="font-size: 14px; color: #D4AF37; font-style: italic; margin-top: 10px;">
+                    *Growth targets are based on current market projections and ecosystem expansion plans.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

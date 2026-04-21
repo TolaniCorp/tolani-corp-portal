@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #000000;
+            color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            border: 10px solid #D4AF37;
+        }
+        .header {
+            padding-top: 40px;
+            padding-left: 60px;
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 48px;
+            color: #D4AF37;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            padding-left: 60px;
+            padding-right: 60px;
+            flex-grow: 1;
+        }
+        .compliance-box {
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid #D4AF37;
+            padding-top: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 30px;
+        }
+        .compliance-box h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            color: #D4AF37;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .compliance-box h3 i {
+            color: #D4AF37;
+        }
+        .compliance-box p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #E5E5E5;
+            margin-bottom: 20px;
+        }
+        .risk-list {
+            list-style: none;
+        }
+        .risk-list li {
+            margin-bottom: 15px;
+            padding-left: 35px;
+            position: relative;
+            font-size: 16px;
+            color: #FFFFFF;
+        }
+        .risk-list li::before {
+            content: "\f3ed";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: #D4AF37;
+        }
+        .badge-center {
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+            padding-bottom: 40px;
+        }
+        .wyoming-badge {
+            background: rgba(229, 198, 75, 0.1);
+            border: 2px solid #D4AF37;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 30px;
+            padding-right: 30px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: #D4AF37;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>Rigor in a Decentralized World</h2>
+        </div>
+        <div class="main-content">
+            <div class="compliance-box">
+                <h3><i class="fas fa-gavel"></i> Wyoming Compliance</h3>
+                <p>The Tolani Ecosystem DAO adheres to the <strong>Wyoming Decentralized Autonomous Organization LLC Act</strong>, ensuring legal recognition of community-led governance.</p>
+                <p>Our <strong>Attachment C Compliance Addendum</strong> provides clear guidelines for DAO operations, risk posture, and member protections in a regulated environment.</p>
+            </div>
+            <div class="compliance-box">
+                <h3><i class="fas fa-shield-alt"></i> Risk Management</h3>
+                <ul class="risk-list">
+                    <li><strong>Treasury Monitoring:</strong> Real-time tracking of DAO-owned assets and liquidity positions.</li>
+                    <li><strong>Protocol Audits:</strong> Continuous security reviews of governance and treasury smart contracts.</li>
+                    <li><strong>Governance Guardrails:</strong> Timelock mechanisms and quorum requirements to prevent malicious actions.</li>
+                    <li><strong>Transparent Reporting:</strong> Publicly accessible audit trails for every proposal and execution.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="badge-center">
+            <div class="wyoming-badge">Wyoming DAO LLC Registered</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Space+Grotesk:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+      body { margin: 0; }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #000000;
+        background-image: 
+          linear-gradient(rgba(255, 184, 0, 0.03) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 184, 0, 0.03) 1px, transparent 1px);
+        background-size: 40px 40px;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Inter', sans-serif;
+        color: #FFFFFF;
+        position: relative;
+      }
+      .header {
+        padding-top: 60px; /* keep title top padding */
+        padding-left: 60px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      .logo {
+        height: 40px;
+        object-fit: contain;
+      }
+      .page-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 32px;
+        color: #FFB800;
+        text-transform: uppercase;
+      }
+      .steps-container {
+        padding-top: 30px; /* reduced from 60 */
+        padding-left: 60px;
+        padding-right: 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px; /* reduced gap */
+      }
+      .step-item {
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid #252540;
+        padding-top: 18px; /* reduced */
+        padding-left: 30px;
+        padding-right: 30px;
+        min-height: 160px; /* reduced from 180 */
+        display: flex;
+        gap: 18px;
+      }
+      .step-item i {
+        font-size: 32px;
+        color: #FFB800;
+        margin-top: 2px; /* tighter */
+      }
+      .step-text h3 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 20px;
+        color: #FFB800;
+        margin-bottom: 8px; /* reduced */
+        text-transform: uppercase;
+      }
+      .step-text p {
+        font-size: 16px;
+        color: #A0A0B0;
+        line-height: 1.5;
+      }
+      .certification-box {
+        margin-top: 20px; /* reduced from 50 */
+        margin-left: 60px;
+        margin-right: 60px;
+        background: rgba(212, 175, 55, 0.05);
+        border-left: 4px solid #FFB800;
+        padding-top: 12px; /* reduced */
+        padding-left: 30px;
+        padding-right: 30px;
+        height: 64px; /* reduced */
+        display: flex;
+        align-items: center;
+      }
+      .certification-box p {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 18px;
+        color: #FFFFFF;
+        font-style: italic;
+      }
+      .certification-box span {
+        color: #FFB800;
+        font-weight: 700;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <img src="/home/ubuntu/presentation_assets/master_brand/TolaniLabs_DigitalT.png" class="logo" alt="Logo">
+            <h1 class="page-title">Action Items &amp; Certification</h1>
+        </div>
+        <div class="steps-container">
+            <div class="step-item">
+                <i class="fas fa-list-check"></i>
+                <div class="step-text">
+                    <h3>Onboarding Checklist</h3>
+                    <p>Complete all items in the onboarding checklist within your first week of joining.</p>
+                </div>
+            </div>
+            <div class="step-item">
+                <i class="fas fa-user-graduate"></i>
+                <div class="step-text">
+                    <h3>Knowledge Checks</h3>
+                    <p>Pass the required operations and security knowledge checks to validate your understanding.</p>
+                </div>
+            </div>
+            <div class="step-item">
+                <i class="fas fa-fire-extinguisher"></i>
+                <div class="step-text">
+                    <h3>Incident Drill</h3>
+                    <p>Successfully complete at least one supervised incident response or security drill.</p>
+                </div>
+            </div>
+            <div class="step-item">
+                <i class="fas fa-certificate"></i>
+                <div class="step-text">
+                    <h3>Access Certification</h3>
+                    <p>Receive formal certification before being granted production-level system privileges.</p>
+                </div>
+            </div>
+        </div>
+        <div class="certification-box">
+            <p>Onboarding concludes with <span>verifiable readiness</span>, not just attendance. Let's operate with confidence.</p>
+        </div>
+    </div>
+</body>
+</html>

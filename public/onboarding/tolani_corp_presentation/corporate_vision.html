@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #000000;
+            color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            border: 10px solid #D4AF37;
+        }
+        .header {
+            padding-top: 40px;
+            padding-left: 60px;
+            margin-bottom: 50px;
+        }
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 48px;
+            color: #D4AF37;
+            text-transform: uppercase;
+        }
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            padding-left: 60px;
+            padding-right: 60px;
+            flex-grow: 1;
+        }
+        .vision-mission-box {
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid #D4AF37;
+            padding-top: 40px;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-bottom: 40px;
+            text-align: center;
+        }
+        .vision-mission-box i {
+            font-size: 64px;
+            color: #D4AF37;
+            margin-bottom: 30px;
+        }
+        .vision-mission-box h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 28px;
+            color: #D4AF37;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .vision-mission-box p {
+            font-size: 20px;
+            line-height: 1.6;
+            color: #E5E5E5;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>Vision for a Unified Future</h2>
+        </div>
+        <div class="main-content">
+            <div class="vision-mission-box">
+                <i class="fas fa-eye"></i>
+                <h3>Our Vision</h3>
+                <p>To be the global leader in decentralized workforce ecosystems, creating a world where skill, opportunity, and capital flow seamlessly across borders through innovative technology and inclusive governance.</p>
+            </div>
+            <div class="vision-mission-box">
+                <i class="fas fa-bullseye"></i>
+                <h3>Our Mission</h3>
+                <p>To architect and scale a robust ecosystem of platforms and services that empower individuals and enterprises with institutional-grade Web3 tools, fostering economic growth and social impact on a global scale.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

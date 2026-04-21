@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Space+Grotesk:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body { margin: 0; }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #000000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Inter', sans-serif;
+        color: #E5E5E5;
+        position: relative;
+      }
+      .header { position: absolute; top: 60px; left: 60px; }
+      .page-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 32px;
+        color: #FFB800;
+        text-transform: uppercase;
+        border-left: 4px solid #2ECC71;
+        padding-left: 20px;
+      }
+      .mission-content {
+        max-width: 900px;
+        text-align: center;
+      }
+      .vision-block {
+        margin-bottom: 60px;
+      }
+      .vision-block h2 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 24px;
+        color: #2ECC71;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+      }
+      .vision-block p {
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 1.2;
+        color: #E5E5E5;
+      }
+      .vision-block p span {
+        color: #FFB800;
+      }
+      .problem-solution {
+        display: flex;
+        gap: 40px;
+        margin-top: 40px;
+      }
+      .ps-item {
+        flex: 1;
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid #000000;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+        text-align: left;
+      }
+      .ps-item h3 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 18px;
+        color: #FFB800;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+      }
+      .ps-item p {
+        font-size: 16px;
+        color: #A0A0B0;
+        line-height: 1.5;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1 class="page-title">Mission & Vision</h1>
+        </div>
+        <div class="mission-content">
+            <div class="vision-block">
+                <h2>Our Vision</h2>
+                <p>Building the <span>Future</span> of Software Development.</p>
+            </div>
+            <div class="problem-solution">
+                <div class="ps-item">
+                    <h3>The Problem</h3>
+                    <p>Software engineering is plagued by tedious grunt work, slow PR cycles, and constant context switching.</p>
+                </div>
+                <div class="ps-item">
+                    <h3>The Solution</h3>
+                    <p>DevBot: An autonomous AI engineer that lives in your tools, writes code, and ships PRs while you sleep.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

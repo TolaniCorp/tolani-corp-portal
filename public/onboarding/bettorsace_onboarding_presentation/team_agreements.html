@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Space+Grotesk:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+      body { margin: 0; }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #000000;
+        background-image: 
+          linear-gradient(rgba(255, 184, 0, 0.03) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 184, 0, 0.03) 1px, transparent 1px);
+        background-size: 40px 40px;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Inter', sans-serif;
+        color: #FFFFFF;
+        position: relative;
+      }
+      .header {
+        padding-top: 60px;
+        padding-left: 60px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      .logo {
+        height: 40px;
+        object-fit: contain;
+      }
+      .page-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 32px;
+        color: #FFB800;
+        text-transform: uppercase;
+      }
+      .agreements-container {
+        /* reduced top padding and smaller gaps to save vertical space */
+        padding-top: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+      }
+      .agreement-box {
+        width: 800px;
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid #252540;
+        border-left: 4px solid #FFB800;
+        /* slightly reduced inner vertical padding */
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 30px;
+        padding-right: 30px;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+      }
+      .agreement-box i {
+        font-size: 24px;
+        color: #FFB800;
+        width: 30px;
+        text-align: center;
+      }
+      .agreement-box p {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        color: #FFFFFF;
+      }
+      .culture-note {
+        /* reduced gap above the note so it fits under 720px */
+        margin-top: 10px;
+        text-align: center;
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 20px;
+        color: #A0A0B0;
+        font-style: italic;
+      }
+      .culture-note span {
+        color: #FFB800;
+        font-weight: 700;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <img src="/home/ubuntu/presentation_assets/master_brand/TolaniLabs_DigitalT.png" class="logo" alt="Logo">
+            <h1 class="page-title">Team Agreements</h1>
+        </div>
+        <div class="agreements-container">
+            <div class="agreement-box">
+                <i class="fas fa-gauge-high"></i>
+                <p>We do not bypass policy for speed.</p>
+            </div>
+            <div class="agreement-box">
+                <i class="fas fa-eye"></i>
+                <p>We do not hide reliability or security risk.</p>
+            </div>
+            <div class="agreement-box">
+                <i class="fas fa-comment-dots"></i>
+                <p>We escalate early with evidence.</p>
+            </div>
+            <div class="agreement-box">
+                <i class="fas fa-shield-heart"></i>
+                <p>We leave systems safer after each incident.</p>
+            </div>
+        </div>
+        <p class="culture-note"><span>Cultural commitments</span> are a fundamental part of our technical quality.</p>
+    </div>
+</body>
+</html>

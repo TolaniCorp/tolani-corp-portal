@@ -50,6 +50,20 @@ const dashboardItems = [
     href: "/employee-portal/documents",
     color: "#ec4899",
   },
+  {
+    icon: "🎬",
+    title: "Video Portal",
+    description: "Access official ecosystem videos and mission briefings",
+    href: "/video-portal/tolani_viewable_video_gallery.html",
+    color: "#D4AF37",
+  },
+  {
+    icon: "🎓",
+    title: "Onboarding Portal",
+    description: "Interactive training and entity-specific onboarding",
+    href: "/onboarding/index.html",
+    color: "#FFB800",
+  },
 ];
 
 const recentActivity = [

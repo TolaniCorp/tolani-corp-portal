@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #000000;
+            color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            border: 10px solid #D4AF37;
+        }
+        .header {
+            padding-top: 40px;
+            padding-left: 60px;
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 48px;
+            color: #D4AF37;
+            text-transform: uppercase;
+        }
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            padding-left: 60px;
+            padding-right: 60px;
+            flex-grow: 1;
+        }
+        .rigor-box {
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid #D4AF37;
+            padding-top: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 30px;
+        }
+        .rigor-box h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 26px;
+            color: #D4AF37;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .rigor-box h3 i {
+            color: #D4AF37;
+        }
+        .rigor-box p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #E5E5E5;
+            margin-bottom: 20px;
+        }
+        .protocol-list {
+            list-style: none;
+        }
+        .protocol-list li {
+            margin-bottom: 15px;
+            padding-left: 35px;
+            position: relative;
+            font-size: 16px;
+            color: #FFFFFF;
+        }
+        .protocol-list li::before {
+            content: "\f058";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: #D4AF37;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>Operational Excellence & Rigor</h2>
+        </div>
+        <div class="main-content">
+            <div class="rigor-box">
+                <h3><i class="fas fa-shield-alt"></i> Military-Grade Planning</h3>
+                <p>TSG utilizes FM 5-0 and 6-0 military planning standards to architect robust and resilient supply chains.</p>
+                <p>Every operation is preceded by rigorous mission analysis and course of action development to ensure mission success.</p>
+            </div>
+            <div class="rigor-box">
+                <h3><i class="fas fa-check-double"></i> Operational Protocols</h3>
+                <ul class="protocol-list">
+                    <li><strong>Standard Operating Procedures (SOPs):</strong> Strict adherence to documented workflows for every logistics phase.</li>
+                    <li><strong>Continuous Monitoring:</strong> Real-time tracking of supply chain health and performance metrics.</li>
+                    <li><strong>Incident Response:</strong> Rapid deployment protocols for addressing logistics disruptions.</li>
+                    <li><strong>Quality Assurance:</strong> Rigorous auditing of suppliers and distribution partners.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

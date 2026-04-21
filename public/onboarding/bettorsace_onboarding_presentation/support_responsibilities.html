@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Space+Grotesk:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+      body { margin: 0; }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #000000;
+        background-image: 
+          linear-gradient(rgba(255, 184, 0, 0.03) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 184, 0, 0.03) 1px, transparent 1px);
+        background-size: 40px 40px;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Inter', sans-serif;
+        color: #FFFFFF;
+        position: relative;
+      }
+      .header {
+        padding-top: 60px; /* keep upper padding as required */
+        padding-left: 60px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      .logo {
+        height: 40px;
+        object-fit: contain;
+      }
+      .page-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 32px;
+        color: #FFB800;
+        text-transform: uppercase;
+      }
+      .roles-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px; /* reduced vertical gap */
+        padding-top: 20px; /* reduced top padding to save height */
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+      .role-card {
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid #252540;
+        padding-top: 16px; /* slightly smaller inner padding */
+        padding-left: 24px;
+        padding-right: 24px;
+        min-height: 200px; /* reduced min-height to trim overall layout */
+        display: flex;
+        flex-direction: column;
+      }
+      .role-card h2 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 20px;
+        color: #FFB800;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .role-card h2 i {
+        font-size: 18px;
+      }
+      .role-card ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .role-card li {
+        font-size: 15px;
+        color: #A0A0B0;
+        margin-bottom: 8px; /* slightly reduced spacing */
+        line-height: 1.4;
+        display: flex;
+        gap: 10px;
+      }
+      .role-card li::before {
+        content: "•";
+        color: #FFB800;
+      }
+      .footer-note {
+        margin-top: 20px; /* keep a small separation */
+        padding-left: 60px;
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 18px;
+        color: #FF4444;
+        font-style: italic;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <img src="/home/ubuntu/presentation_assets/master_brand/TolaniLabs_DigitalT.png" class="logo" alt="Logo">
+            <h1 class="page-title">Support Responsibilities</h1>
+        </div>
+        <div class="roles-grid">
+            <div class="role-card">
+                <h2><i class="fas fa-headset"></i> Product & Support</h2>
+                <ul>
+                    <li>Capture user impact clearly</li>
+                    <li>Map impact to affected flows</li>
+                    <li>Initial user communication</li>
+                    <li>Track recurring issues</li>
+                </ul>
+            </div>
+            <div class="role-card">
+                <h2><i class="fas fa-code"></i> Engineering & Platform</h2>
+                <ul>
+                    <li>Rapid root cause triage</li>
+                    <li>Safe incident mitigation</li>
+                    <li>Deploy code fixes/patches</li>
+                    <li>Performance monitoring</li>
+                </ul>
+            </div>
+            <div class="role-card">
+                <h2><i class="fas fa-user-shield"></i> Security & Ops</h2>
+                <ul>
+                    <li>Handle leak exposure</li>
+                    <li>Rotate secrets & keys</li>
+                    <li>Isolate unauthorized access</li>
+                    <li>Preserve forensic audit trail</li>
+                </ul>
+            </div>
+            <div class="role-card">
+                <h2><i class="fas fa-chess-king"></i> Founding Team</h2>
+                <ul>
+                    <li>Prioritize against trust/revenue</li>
+                    <li>Assess legal/brand exposure</li>
+                    <li>Final go/no-go on rollbacks</li>
+                    <li>Stakeholder management</li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-note">Speed and clarity are the expectation; no blaming handoffs.</p>
+    </div>
+</body>
+</html>

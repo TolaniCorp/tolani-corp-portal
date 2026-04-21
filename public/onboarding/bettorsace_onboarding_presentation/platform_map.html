@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Space+Grotesk:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+      body { margin: 0; }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #000000;
+        background-image: 
+          linear-gradient(rgba(255, 184, 0, 0.03) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 184, 0, 0.03) 1px, transparent 1px);
+        background-size: 40px 40px;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Inter', sans-serif;
+        color: #FFFFFF;
+        position: relative;
+      }
+      .header {
+        padding-top: 60px;
+        padding-left: 60px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      .logo {
+        height: 40px;
+        object-fit: contain;
+      }
+      .page-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 32px;
+        color: #FFB800;
+        text-transform: uppercase;
+      }
+      .content-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 40px;
+        padding-top: 40px;
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+      .image-container img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border: 1px solid #252540;
+      }
+      .components-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .component-item {
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid #252540;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        min-height: 100px;
+      }
+      .component-item h3 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 20px;
+        color: #FFB800;
+        margin-bottom: 10px;
+      }
+      .component-item p {
+        font-size: 15px;
+        color: #A0A0B0;
+        line-height: 1.4;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <img src="/home/ubuntu/presentation_assets/master_brand/TolaniLabs_DigitalT.png" class="logo" alt="Logo">
+            <h1 class="page-title">Platform Map (What We Run)</h1>
+        </div>
+        <div class="content-grid">
+            <div class="image-container">
+                <img src="/home/ubuntu/bettorsace_onboarding_presentation/assets/dashboard_1.jpg" alt="Platform Dashboard">
+            </div>
+            <div class="components-list">
+                <div class="component-item">
+                    <h3>React & Vite Frontend</h3>
+                    <p>Modern, high-performance web and mobile experiences for operators and users.</p>
+                </div>
+                <div class="component-item">
+                    <h3>Convex Real-time Backend</h3>
+                    <p>Reactive, consistent data layer for real-time intelligence and signal delivery.</p>
+                </div>
+                <div class="component-item">
+                    <h3>APIM Product Model</h3>
+                    <p>Standardized monetization and gating through a unified API Management layer.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

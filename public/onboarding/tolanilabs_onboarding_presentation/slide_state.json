@@ -1,0 +1,108 @@
+{
+  "project_info": {
+    "title": "Tolani Labs Onboarding",
+    "created": 1776714104.3002837,
+    "last_updated": 1776717102.1492097,
+    "total_slides": 8
+  },
+  "slides": [
+    {
+      "id": "cover",
+      "state": "edited",
+      "pageNum": 1
+    },
+    {
+      "id": "ecosystem_overview",
+      "state": "edited",
+      "pageNum": 2
+    },
+    {
+      "id": "brand_identity",
+      "state": "edited",
+      "pageNum": 3
+    },
+    {
+      "id": "ops_planning",
+      "state": "edited",
+      "pageNum": 4
+    },
+    {
+      "id": "hr_workflow",
+      "state": "edited",
+      "pageNum": 5
+    },
+    {
+      "id": "culture_comms",
+      "state": "edited",
+      "pageNum": 6
+    },
+    {
+      "id": "growth_success",
+      "state": "edited",
+      "pageNum": 7
+    },
+    {
+      "id": "closing",
+      "state": "edited",
+      "pageNum": 8
+    }
+  ],
+  "outline": [
+    {
+      "id": "cover",
+      "title": "Tolani Labs Onboarding",
+      "summary": "Cover slide: The Factory of the Future. Action, Alert, Speed.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "ecosystem_overview",
+      "title": "The Tolani Ecosystem",
+      "summary": "Overview of Tolani Corp, Tolani Labs, and the portfolio companies.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "brand_identity",
+      "title": "Brand Identity & Codes",
+      "summary": "Signal Red, Graphite, and Cyan: The uniform of the factory.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "ops_planning",
+      "title": "Operations & Military-Grade Planning",
+      "summary": "FM-style planning, secret rotation, and ecosystem architecture.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "hr_workflow",
+      "title": "HR & Contractor Workflow",
+      "summary": "Pre-onboarding, system access, and week 1 checkpoints.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "culture_comms",
+      "title": "Culture & Communication NormsBase",
+      "summary": "Weekly standups, high ownership, and OpSec rigor.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "growth_success",
+      "title": "Success & Growth Milestones",
+      "summary": "30/60/90 day milestones and the future of the factory.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "closing",
+      "title": "Ready for Action",
+      "summary": "Closing slide: The Factory of the Future.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    }
+  ]
+}

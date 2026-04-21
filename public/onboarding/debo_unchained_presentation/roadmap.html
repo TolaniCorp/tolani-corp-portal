@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+      /* Remove default body gap so the container sits flush */
+      body { margin: 0; }
+
+      .slide-container { 
+        width: 1280px; 
+        min-height: 720px; /* keep as required */
+        box-sizing: border-box; 
+        background: #000000; 
+        color: #FFFFFF; 
+        font-family: 'Inter', sans-serif;
+        position: relative;
+        top: -9px; /* shift up so overall bottom < 720px (calculation: original top ~8 -> 8-9=-1; -1+720=719) */
+        overflow: hidden;
+        padding-top: 60px;
+      }
+      .header-container {
+        padding-left: 80px;
+        margin-bottom: 80px;
+      }
+      .header {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 48px;
+        color: #FFB800;
+        text-transform: uppercase;
+        margin: 0;
+      }
+      .timeline-container {
+        position: relative;
+        padding-left: 80px;
+        padding-right: 80px;
+        margin-top: 100px;
+      }
+      .timeline-line {
+        position: absolute;
+        top: 0;
+        left: 80px;
+        right: 80px;
+        height: 2px;
+        background: rgba(0, 180, 216, 0.3);
+      }
+      .milestone-grid {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+      }
+      .milestone {
+        width: 22%;
+        position: relative;
+      }
+      .milestone-marker {
+        width: 16px;
+        height: 16px;
+        background: #FFB800;
+        position: absolute;
+        top: -8px;
+        left: 0;
+        box-shadow: 0 0 10px #FFB800;
+      }
+      .milestone-date {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 18px;
+        color: #FFB800;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      .milestone-title {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 22px;
+        color: #FFFFFF;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+      }
+      .milestone-list {
+        list-style: none;
+        padding: 0;
+      }
+      .milestone-item {
+        font-size: 14px;
+        opacity: 0.7;
+        margin-bottom: 8px;
+        line-height: 1.4;
+        display: flex;
+        align-items: flex-start;
+      }
+      .milestone-item i {
+        font-size: 10px;
+        color: #FFB800;
+        margin-right: 8px;
+        margin-top: 4px;
+      }
+      .footer-status {
+        position: absolute;
+        bottom: 40px;
+        right: 80px;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 14px;
+        color: #FFB800;
+        opacity: 0.6;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header-container">
+            <h1 class="header">Roadmap to Unchained Mastery</h1>
+        </div>
+
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
+            <div class="milestone-grid">
+                <!-- Q1 2026 -->
+                <div class="milestone">
+                    <div class="milestone-marker"></div>
+                    <div class="milestone-date">Q1 2026</div>
+                    <h2 class="milestone-title">Foundation</h2>
+                    <ul class="milestone-list">
+                        <li class="milestone-item"><i class="fas fa-caret-right"></i>MVP Launch with NATT Core</li>
+                        <li class="milestone-item"><i class="fas fa-caret-right"></i>Autonomous OSINT Engine</li>
+                        <li class="milestone-item"><i class="fas fa-caret-right"></i>Ghost Node Proxy Network</li>
+                    </ul>
+                </div>
+
+                <!-- Q2 2026 -->
+                <div class="milestone">
+                    <div class="milestone-marker"></div>
+                    <div class="milestone-date">Q2 2026</div>
+                    <h2 class="milestone-title">Orchestration</h2>
+                    <ul class="milestone-list">
+                        <li class="milestone-item"><i class="fas fa-caret-right"></i>Public Beta Release</li>
+                        <li class="milestone-item"><i class="fas fa-caret-right"></i>Sandboxed Exploit Lab</li>
+                        <li class="milestone-item"><i class="fas fa-caret-right"></i>Stripe Billing Integration</li>
+                    </ul>
+                </div>
+
+                <!-- Q3 2026 -->
+                <div class="milestone">
+                    <div class="milestone-marker"></div>
+                    <div class="milestone-date">Q3 2026</div>
+                    <h2 class="milestone-title">Compliance</h2>
+                    <ul class="milestone-list">
+                        <li class="milestone-item"><i class="fas fa-caret-right"></i>SOC 2 Audit Readiness</li>
+                        <li class="milestone-item"><i class="fas fa-caret-right"></i>MITRE ATT&CK Mapping</li>
+                        <li class="milestone-item"><i class="fas fa-caret-right"></i>Advanced Reporting Engine</li>
+                    </ul>
+                </div>
+
+                <!-- Q4 2026 -->
+                <div class="milestone">
+                    <div class="milestone-marker"></div>
+                    <div class="milestone-date">Q4 2026</div>
+                    <h2 class="milestone-title">Enterprise</h2>
+                    <ul class="milestone-list">
+                        <li class="milestone-item"><i class="fas fa-caret-right"></i>Self-Hosted Deployments</li>
+                        <li class="milestone-item"><i class="fas fa-caret-right"></i>White-Label Solutions</li>
+                        <li class="milestone-item"><i class="fas fa-caret-right"></i>Global Fleet Command</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-status">
+            // MISSION_TIMELINE: ACCELERATED | TARGET: Q4_DOMINATION
+        </div>
+    </div>
+</body>
+</html>

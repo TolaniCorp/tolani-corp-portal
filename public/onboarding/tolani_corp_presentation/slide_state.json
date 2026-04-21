@@ -1,0 +1,108 @@
+{
+  "project_info": {
+    "title": "Tolani Corp",
+    "created": 1776723946.830366,
+    "last_updated": 1776724265.4942646,
+    "total_slides": 8
+  },
+  "slides": [
+    {
+      "id": "front_page",
+      "state": "edited",
+      "pageNum": 1
+    },
+    {
+      "id": "corporate_vision",
+      "state": "edited",
+      "pageNum": 2
+    },
+    {
+      "id": "ecosystem_portfolio",
+      "state": "edited",
+      "pageNum": 3
+    },
+    {
+      "id": "strategic_monetization",
+      "state": "edited",
+      "pageNum": 4
+    },
+    {
+      "id": "infrastructure_operations",
+      "state": "edited",
+      "pageNum": 5
+    },
+    {
+      "id": "workforce_development",
+      "state": "edited",
+      "pageNum": 6
+    },
+    {
+      "id": "leadership_governance",
+      "state": "edited",
+      "pageNum": 7
+    },
+    {
+      "id": "closing_outlook",
+      "state": "edited",
+      "pageNum": 8
+    }
+  ],
+  "outline": [
+    {
+      "id": "front_page",
+      "title": "Tolani Corp",
+      "summary": "Introduction to Tolani Corp and its corporate identity.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "corporate_vision",
+      "title": "The Foundation of the Ecosystem",
+      "summary": "Overview of the corporate vision, pillars, and global reach.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "ecosystem_portfolio",
+      "title": "A Unified Digital Economy",
+      "summary": "Introduction to the different platforms and entities within the portfolio.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "strategic_monetization",
+      "title": "Driving Revenue & Growth",
+      "summary": "Overview of the strategic revenue streams and growth targets.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "infrastructure_operations",
+      "title": "Built for Scalability",
+      "summary": "Technical infrastructure and operational excellence of the ecosystem.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "workforce_development",
+      "title": "Investing in Human Capital",
+      "summary": "The importance of training and workforce development in the corporate strategy.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "leadership_governance",
+      "title": "Steering the Future",
+      "summary": "Overview of leadership, compliance, and governance integration.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "closing_outlook",
+      "title": "Building the Next Frontier",
+      "summary": "Future outlook, 90-day targets, and final call to action.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    }
+  ]
+}

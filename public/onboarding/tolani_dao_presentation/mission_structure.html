@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #000000;
+            color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            border: 10px solid #D4AF37;
+        }
+        .header {
+            padding-top: 40px;
+            padding-left: 60px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 48px;
+            color: #D4AF37;
+            text-transform: uppercase;
+        }
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            padding-left: 60px;
+            padding-right: 60px;
+            flex-grow: 1;
+        }
+        .info-box {
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid #D4AF37;
+            padding-top: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 30px;
+        }
+        .info-box h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            color: #D4AF37;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        .info-box p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #E5E5E5;
+            margin-bottom: 15px;
+        }
+        .structure-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .structure-table th, .structure-table td {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(0, 115, 115, 0.3);
+        }
+        .structure-table th {
+            font-family: 'Montserrat', sans-serif;
+            color: #D4AF37;
+            background: rgba(0, 115, 115, 0.4);
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        .structure-table td {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>Governance with Purpose</h2>
+        </div>
+        <div class="main-content">
+            <div class="info-box">
+                <h3>Legal Foundation</h3>
+                <p>The Tolani Ecosystem DAO operates as a registered <strong>Wyoming DAO LLC</strong>, providing a robust legal framework that bridges decentralized governance with traditional corporate compliance.</p>
+                <p>This structure ensures that community decisions are legally recognized while maintaining the transparency and security of the blockchain.</p>
+            </div>
+            <div class="info-box">
+                <h3>Core Structure</h3>
+                <table class="structure-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>DAO Model</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Decision Making</td>
+                            <td>Decentralized / Community-Led</td>
+                        </tr>
+                        <tr>
+                            <td>Transparency</td>
+                            <td>100% On-Chain Audit Trail</td>
+                        </tr>
+                        <tr>
+                            <td>Compliance</td>
+                            <td>Wyoming DAO LLC Registered</td>
+                        </tr>
+                        <tr>
+                            <td>Control</td>
+                            <td>No Single Point of Failure</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

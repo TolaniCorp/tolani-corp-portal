@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Space+Grotesk:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+      body { margin: 0; }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #000000;
+        background-image: 
+          linear-gradient(rgba(255, 184, 0, 0.03) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 184, 0, 0.03) 1px, transparent 1px);
+        background-size: 40px 40px;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Inter', sans-serif;
+        color: #FFFFFF;
+        position: relative;
+      }
+      .header {
+        padding-top: 60px;
+        padding-left: 60px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      .logo {
+        height: 40px;
+        object-fit: contain;
+      }
+      .page-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 32px;
+        color: #FFB800;
+        text-transform: uppercase;
+      }
+      .content-area {
+        padding-top: 40px;
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+      .tier-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        margin-bottom: 50px;
+      }
+      .tier-card {
+        border: 1px solid #252540;
+        background: rgba(255, 255, 255, 0.02);
+        padding-top: 30px;
+        padding-left: 25px;
+        padding-right: 25px;
+        min-height: 220px;
+      }
+      .tier-card.featured {
+        border-color: #FFB800;
+        background: rgba(212, 175, 55, 0.05);
+      }
+      .tier-name {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 24px;
+        color: #FFB800;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+      .tier-desc {
+        font-size: 15px;
+        color: #A0A0B0;
+        line-height: 1.5;
+      }
+      .discipline-section {
+        border-top: 2px solid #FFB800;
+        background: rgba(255, 184, 0, 0.02);
+        padding-top: 30px;
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+      .discipline-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 22px;
+        color: #FFB800;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+      .discipline-list {
+        display: flex;
+        gap: 40px;
+      }
+      .discipline-item {
+        flex: 1;
+        display: flex;
+        gap: 15px;
+      }
+      .discipline-item i {
+        color: #FF4444;
+        font-size: 18px;
+        margin-top: 3px;
+      }
+      .discipline-item p {
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 700;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <img src="/home/ubuntu/presentation_assets/master_brand/TolaniLabs_DigitalT.png" class="logo" alt="Logo">
+            <h1 class="page-title">Paygate Limits & Expectations</h1>
+        </div>
+        <div class="content-area">
+            <div class="tier-grid">
+                <div class="tier-card">
+                    <div class="tier-name">Free Tier</div>
+                    <p class="tier-desc">Low-volume evaluation path. Hard ceilings on requests and data access. Designed for initial discovery.</p>
+                </div>
+                <div class="tier-card featured">
+                    <div class="tier-name">Pro Tier</div>
+                    <p class="tier-desc">Paid path for active integrations and SMB usage. Higher throughput with standard commercial terms.</p>
+                </div>
+                <div class="tier-card">
+                    <div class="tier-name">Enterprise</div>
+                    <p class="tier-desc">High-volume, contract-bound access. Controlled onboarding with custom limits and dedicated support.</p>
+                </div>
+            </div>
+            <div class="discipline-section">
+                <div class="discipline-title">
+                    <i class="fas fa-gavel"></i>
+                    <span>Team Behavior Expectations</span>
+                </div>
+                <div class="discipline-list">
+                    <div class="discipline-item">
+                        <i class="fas fa-ban"></i>
+                        <p>Do not bypass quota or rate controls in ad hoc code or scripts.</p>
+                    </div>
+                    <div class="discipline-item">
+                        <i class="fas fa-user-shield"></i>
+                        <p>Do not grant enterprise-level tool access without a formal approval path.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
