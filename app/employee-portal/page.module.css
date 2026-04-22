@@ -4,6 +4,31 @@
   padding: 2rem;
 }
 
+.setupTitle {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.setupMessage {
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto 1.5rem;
+}
+
+.setupBackLink {
+  margin-top: 1.5rem;
+  color: #8b5cf6;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.setupBackLink:hover {
+  text-decoration: underline;
+}
+
 .hero {
   max-width: 1200px;
   margin: 0 auto;
@@ -395,6 +420,52 @@
   display: flex;
   justify-content: center;
   margin-bottom: 2rem;
+}
+
+.enterpriseForm {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.enterpriseLabel {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #c4b5fd;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.enterpriseRow {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.enterpriseButton {
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #7c3aed, #8b5cf6);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.enterpriseButton:hover {
+  transform: translateY(-1px);
+}
+
+.enterpriseHint {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .clerkRoot {
