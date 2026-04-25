@@ -4,7 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
+import { PurchaseChannelsSection } from "../../../components/PurchaseChannels";
+import { getPlatformKeyForBrandId } from "../../../lib/agentCommerce";
 import { getBrandById, getAllBrandSlugs, ecosystemBrands } from "../../../lib/brands";
+import { getPurchaseChannelsForPlatform } from "../../../lib/portfolioStrategy";
 import styles from "./brand.module.css";
 
 interface PageProps {
@@ -43,6 +46,9 @@ export default async function BrandPage({ params }: PageProps) {
 
   // Get other brands for the "Explore More" section
   const otherBrands = ecosystemBrands.filter((b) => b.id !== brand.id).slice(0, 3);
+  const platformKey = getPlatformKeyForBrandId(brand.id);
+  const purchaseChannels = platformKey ? getPurchaseChannelsForPlatform(platformKey) : [];
+  const hasPurchaseChannels = purchaseChannels.length > 0;
 
   return (
     <div className={styles.page}>
@@ -165,13 +171,31 @@ export default async function BrandPage({ params }: PageProps) {
           </section>
         )}
 
+        {hasPurchaseChannels ? (
+          <section className={`section ${styles.section}`}>
+            <div className={`container ${styles.container}`}>
+              <PurchaseChannelsSection
+                title={`${brand.name} purchase route`}
+                description={`Use the current route for ${brand.name}. Stripe checkout appears automatically where a live payment link is configured. Consultation, pilot, and retained-account lanes stay operator led.`}
+                channels={purchaseChannels}
+              />
+            </div>
+          </section>
+        ) : null}
+
         {/* CTA Section */}
         <section className={`section ${styles.ctaSection}`}>
           <div className={`container ${styles.container}`}>
             <div className={`glass-card ${styles.ctaCard}`} style={{ borderColor: `${brand.color}40` }}>
-              <h2 className={styles.ctaTitle}>Partner with {brand.name}</h2>
+              <h2 className={styles.ctaTitle}>
+                {hasPurchaseChannels
+                  ? `Need a custom engagement with ${brand.name}?`
+                  : `Partner with ${brand.name}`}
+              </h2>
               <p className={styles.ctaText}>
-                Interested in working together? Let's discuss how we can create value together.
+                {hasPurchaseChannels
+                  ? "Use the purchase route above for standard checkout or intake. For partnerships, enterprise scoping, or custom operating work, contact the team directly."
+                  : "Interested in working together? Let's discuss how we can create value together."}
               </p>
               <Link href="/#contact" className="btn btn-primary">
                 Get in Touch

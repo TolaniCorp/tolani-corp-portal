@@ -1,5 +1,6 @@
 packages:
-  - .
+  - "."
+  - "tolani-ecosystem-portal"
 ignoredBuiltDependencies:
   - sharp
   - unrs-resolver

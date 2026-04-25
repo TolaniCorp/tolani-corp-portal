@@ -98,8 +98,7 @@ export default function DashboardContent() {
             <Link href="/employee-portal/dashboard" className={styles.navLink}>Dashboard</Link>
             <Link href="/employee-portal/profile" className={styles.navLink}>Profile</Link>
           </nav>
-          <UserButton 
-            afterSignOutUrl="/employee-portal"
+          <UserButton
             appearance={{
               elements: {
                 avatarBox: styles.userAvatar,

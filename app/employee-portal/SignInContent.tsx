@@ -1,8 +1,8 @@
 "use client";
 
 import { SignIn, useAuth } from "@clerk/nextjs";
-import { useRouter } from "next/navigation";
-import { useEffect } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
+import { FormEvent, useEffect, useState } from "react";
 import styles from "./page.module.css";
 
 const quickLinks = [
@@ -47,6 +47,21 @@ const quickLinks = [
 export default function SignInContent() {
   const { isSignedIn, isLoaded } = useAuth();
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const [workEmail, setWorkEmail] = useState(searchParams.get("email") ?? "");
+
+  const emailHint = searchParams.get("email") ?? "";
+
+  function handleEnterpriseContinue(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+
+    const trimmed = workEmail.trim().toLowerCase();
+    if (!trimmed || !trimmed.includes("@")) {
+      return;
+    }
+
+    router.push(`/employee-portal?email=${encodeURIComponent(trimmed)}#enterprise`);
+  }
 
   useEffect(() => {
     if (isLoaded && isSignedIn) {
@@ -86,6 +101,34 @@ export default function SignInContent() {
       </section>
 
       <section className={styles.loginSection}>
+        <form className={styles.enterpriseForm} onSubmit={handleEnterpriseContinue}>
+          <label htmlFor="enterprise-email" className={styles.enterpriseLabel}>
+            Enterprise SSO
+          </label>
+          <div className={styles.enterpriseRow}>
+            <input
+              id="enterprise-email"
+              type="email"
+              className={styles.input}
+              value={workEmail}
+              onChange={(event) => setWorkEmail(event.target.value)}
+              placeholder="name@company.com"
+              autoComplete="email"
+            />
+            <button type="submit" className={styles.enterpriseButton}>
+              Continue
+            </button>
+          </div>
+          <p className={styles.enterpriseHint}>
+            Use your company email to continue with your organization&apos;s sign-in policy.
+          </p>
+          {emailHint ? (
+            <p className={styles.enterpriseHint}>
+              Email hint detected: <strong>{emailHint}</strong>
+            </p>
+          ) : null}
+        </form>
+
         <div className={styles.clerkContainer}>
           <SignIn 
             appearance={{
@@ -100,6 +143,7 @@ export default function SignInContent() {
               },
             }}
             routing="hash"
+            transferable
             forceRedirectUrl="/employee-portal/dashboard"
             signUpUrl="/employee-portal/sign-up"
           />

@@ -30,5 +30,10 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts"
   ],
-  "exclude": ["node_modules", "tc-construction-portal", "tolani-labs-portal"]
+  "exclude": [
+    "node_modules",
+    "tc-construction-portal",
+    "tolani-labs-portal",
+    "tolani-ecosystem-portal"
+  ]
 }

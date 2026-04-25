@@ -1,0 +1,30 @@
+{
+    "name": "TolaniToken",
+    "symbol": "TOL",
+    "decimals": 18,
+    "description": "TolaniToken (TOL) is the native utility token for TolaniDAO and Tolani Corp. It powers payments, governance, and access throughout the ecosystem.",
+    "external_url": "https://tolanicorp.us",
+    "image": "ipfs://bafybeihcblheiynta7jx6fmnbmttf4sesbbxjhjnadu37th2gqcceayypu/TolaniToken_512x512.png",
+    "attributes": [
+        {
+            "trait_type": "Utility",
+            "value": "Governance"
+        },
+        {
+            "trait_type": "Utility",
+            "value": "Payments"
+        },
+        {
+            "trait_type": "Utility",
+            "value": "Access"
+        },
+        {
+            "trait_type": "DAO",
+            "value": "TolaniDAO"
+        },
+        {
+            "trait_type": "Parent Company",
+            "value": "Tolani Corp"
+        }
+    ]
+}

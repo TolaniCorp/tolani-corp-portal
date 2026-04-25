@@ -5,63 +5,74 @@ const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://tolanicorp.us';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const brandSlugs = getAllBrandSlugs();
+  const lastModified = new Date();
   
-  // Static pages
   const staticPages = [
     {
       url: BASE_URL,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: 'weekly' as const,
       priority: 1,
     },
     {
       url: `${BASE_URL}/about`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: 'monthly' as const,
       priority: 0.9,
     },
     {
-      url: `${BASE_URL}/ecosystem`,
-      lastModified: new Date(),
+      url: `${BASE_URL}/platform-engineering`,
+      lastModified,
       changeFrequency: 'weekly' as const,
       priority: 0.9,
     },
     {
-      url: `${BASE_URL}/careers`,
-      lastModified: new Date(),
+      url: `${BASE_URL}/strategy`,
+      lastModified,
       changeFrequency: 'weekly' as const,
-      priority: 0.7,
+      priority: 0.95,
     },
     {
-      url: `${BASE_URL}/news`,
-      lastModified: new Date(),
-      changeFrequency: 'daily' as const,
-      priority: 0.8,
+      url: `${BASE_URL}/teaming-events`,
+      lastModified,
+      changeFrequency: 'weekly' as const,
+      priority: 0.85,
     },
     {
-      url: `${BASE_URL}/investors`,
-      lastModified: new Date(),
+      url: `${BASE_URL}/communications`,
+      lastModified,
+      changeFrequency: 'weekly' as const,
+      priority: 0.85,
+    },
+    {
+      url: `${BASE_URL}/ecosystem`,
+      lastModified,
+      changeFrequency: 'weekly' as const,
+      priority: 0.9,
+    },
+    {
+      url: `${BASE_URL}/employee-portal`,
+      lastModified,
       changeFrequency: 'monthly' as const,
       priority: 0.6,
     },
     {
       url: `${BASE_URL}/privacy`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: 'yearly' as const,
       priority: 0.3,
     },
     {
       url: `${BASE_URL}/terms`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: 'yearly' as const,
       priority: 0.3,
     },
   ];
 
-  // Dynamic brand pages
   const brandPages = brandSlugs.map((slug) => ({
     url: `${BASE_URL}/ecosystem/${slug}`,
-    lastModified: new Date(),
+    lastModified,
     changeFrequency: 'monthly' as const,
     priority: 0.8,
   }));

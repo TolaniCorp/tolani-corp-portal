@@ -12,15 +12,18 @@
     "generate:foundation-lockup": "node scripts/generate-foundation-lockup.mjs"
   },
   "dependencies": {
-    "@clerk/nextjs": "^6.36.7",
+    "@clerk/nextjs": "^7.2.4",
     "@resvg/resvg-js": "^2.6.2",
+    "@tailwindcss/typography": "^0.5.19",
     "canvas": "^3.2.0",
+    "clsx": "^2.1.1",
     "convex": "^1.31.3",
     "next": "16.1.1",
     "nodemailer": "^7.0.12",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "sharp": "^0.33.5",
+    "stripe": "^20.4.1",
     "svix": "^1.84.1"
   },
   "devDependencies": {

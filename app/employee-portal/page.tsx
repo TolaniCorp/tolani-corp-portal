@@ -2,11 +2,9 @@
 
 import dynamic from "next/dynamic";
 import styles from "./page.module.css";
+import { hasClerkClientEnv } from "@/lib/clerk";
 
-// Check if Clerk is configured
-const isClerkConfigured = typeof window !== "undefined" 
-  ? !!process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY?.startsWith("pk_")
-  : !!process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY?.startsWith("pk_");
+const isClerkConfigured = hasClerkClientEnv();
 
 // Dynamically import sign-in content to avoid SSR issues with Clerk
 const SignInContent = dynamic(() => import("./SignInContent"), {

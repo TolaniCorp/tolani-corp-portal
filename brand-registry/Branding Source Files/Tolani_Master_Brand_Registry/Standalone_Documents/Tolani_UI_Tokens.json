@@ -1,0 +1,34 @@
+{
+  "corp": {
+    "primary": {
+      "gold": "#D4AF37",
+      "teal": "#2E8B8B"
+    },
+    "neutral": {
+      "obsidian": "#0B0B0B",
+      "stone": "#E5E5E5"
+    }
+  },
+  "labs": {
+    "primary": {
+      "red": "#E10600"
+    },
+    "neutral": {
+      "graphite": "#2B2B2B",
+      "white": "#FFFFFF"
+    },
+    "accent": {
+      "cyan": "#00B4D8",
+      "emerald": "#2ECC71"
+    }
+  },
+  "foundation": {
+    "primary": {
+      "blue": "#3A7CA5"
+    },
+    "neutral": {
+      "sand": "#EFE6D8",
+      "slate": "#6B7280"
+    }
+  }
+}

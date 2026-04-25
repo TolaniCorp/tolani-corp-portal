@@ -1,0 +1,7 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <desc>Tolani Corp Architectural Mark - Deep Bronze</desc>
+  <path d="M156 120H356V180H356.5C375.5 180 395.5 195 401.5 220C407.5 245 402.5 265 391.5 273C402.5 281 407.5 301 401.5 326C395.5 351 375.5 366 356.5 366H356V426H156V366H226V180H156V120Z" fill="#5D4023"/>
+  <rect x="226" y="120" width="60" height="306" fill="#5D4023"/>
+  <!-- Architectural C wrapping -->
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M136 273C136 188.5 204.5 120 289 120V180C237.641 180 196 221.641 196 273C196 324.359 237.641 366 289 366V426C204.5 426 136 357.5 136 273Z" fill="#5D4023"/>
+</svg>
