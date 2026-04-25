@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Space+Grotesk:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+      body { margin: 0; }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #000000;
+        background-image: 
+          linear-gradient(rgba(255, 184, 0, 0.03) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 184, 0, 0.03) 1px, transparent 1px);
+        background-size: 40px 40px;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Inter', sans-serif;
+        color: #FFFFFF;
+        position: relative;
+      }
+      .header {
+        padding-top: 60px;
+        padding-left: 60px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      .logo {
+        height: 40px;
+        object-fit: contain;
+      }
+      .page-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 32px;
+        color: #FFB800;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      .content-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        padding-top: 60px;
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+      .policy-section h2, .verification-section h2 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 24px;
+        color: #FFB800;
+        margin-bottom: 32px;
+        border-left: 4px solid #FFB800;
+        padding-left: 16px;
+      }
+      .policy-box {
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid #252540;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-bottom: 24px;
+        min-height: 140px;
+      }
+      .policy-box h3 {
+        font-size: 18px;
+        margin-bottom: 12px;
+        color: #FFFFFF;
+      }
+      .policy-box p {
+        font-size: 15px;
+        color: #A0A0B0;
+        line-height: 1.5;
+      }
+      .verification-list {
+        list-style: none;
+      }
+      .verification-item {
+        background: rgba(212, 175, 55, 0.05);
+        border: 1px solid rgba(255, 184, 0, 0.2);
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        height: 80px;
+      }
+      .verification-item i {
+        font-size: 24px;
+        color: #FFB800;
+      }
+      .verification-item span {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+      }
+      .footer-warning {
+        margin-top: 20px;
+        color: #FF4444;
+        font-style: italic;
+        font-size: 14px;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <img src="/home/ubuntu/presentation_assets/master_brand/TolaniLabs_DigitalT.png" class="logo" alt="Logo">
+            <h1 class="page-title">MCP Tool Access & Gating</h1>
+        </div>
+        <div class="content-grid">
+            <div class="policy-section">
+                <h2>Default Policies</h2>
+                <div class="policy-box">
+                    <h3>Unknown Tool Defaults</h3>
+                    <p>Any newly federated or unrecognized tool defaults to <strong>Enterprise-only</strong> treatment until explicitly re-classified.</p>
+                </div>
+                <div class="policy-box">
+                    <h3>Federation Rules</h3>
+                    <p>Federation endpoints are strictly gated. No public access unless approved by a formal policy review.</p>
+                </div>
+            </div>
+            <div class="verification-section">
+                <h2>Operator Verification</h2>
+                <ul class="verification-list">
+                    <li class="verification-item">
+                        <i class="fas fa-user-check"></i>
+                        <span>Verify Auth Context</span>
+                    </li>
+                    <li class="verification-item">
+                        <i class="fas fa-id-card"></i>
+                        <span>Verify Tier Entitlement</span>
+                    </li>
+                    <li class="verification-item">
+                        <i class="fas fa-file-contract"></i>
+                        <span>Verify Policy Headers</span>
+                    </li>
+                </ul>
+                <p class="footer-warning">Release work must validate gate behavior both BEFORE and AFTER deployment.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

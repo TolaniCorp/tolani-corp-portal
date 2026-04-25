@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Space+Grotesk:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body { margin: 0; }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #000000;
+        background-image: linear-gradient(rgba(0, 180, 216, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 180, 216, 0.05) 1px, transparent 1px);
+        background-size: 80px 80px;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Inter', sans-serif;
+        color: #E5E5E5;
+      }
+      .header { padding-top: 60px; padding-left: 60px; }
+      .page-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 32px;
+        color: #FFB800;
+        text-transform: uppercase;
+        border-left: 4px solid #2ECC71;
+        padding-left: 20px;
+      }
+      .stack-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding-top: 50px;
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+      .stack-card {
+        background: rgba(0, 180, 216, 0.05);
+        border: 1px solid #FFB800;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        min-height: 180px;
+      }
+      .stack-card h3 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 24px;
+        color: #2ECC71;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+      }
+      .stack-card p {
+        font-size: 16px;
+        color: #A0A0B0;
+        line-height: 1.6;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1 class="page-title">Platform Architecture & Stack</h1>
+        </div>
+        <div class="stack-grid">
+            <div class="stack-card">
+                <h3>Core Runtime</h3>
+                <p>Built on TypeScript and Node.js for type-safe, high-performance execution of autonomous tasks.</p>
+            </div>
+            <div class="stack-card">
+                <h3>Intelligence Engine</h3>
+                <p>Powered by Claude AI (Anthropic) for advanced reasoning, code synthesis, and task planning.</p>
+            </div>
+            <div class="stack-card">
+                <h3>Data Foundation</h3>
+                <p>Convex and Postgres for real-time state management and persistent agent memory.</p>
+            </div>
+            <div class="stack-card">
+                <h3>Interface Layer</h3>
+                <p>Seamless integration with Slack, Discord, and GitHub APIs for a native developer experience.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

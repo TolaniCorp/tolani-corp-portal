@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #000000;
+            color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            border: 10px solid #D4AF37;
+        }
+        .header {
+            padding-top: 40px;
+            padding-left: 60px;
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 48px;
+            color: #D4AF37;
+            text-transform: uppercase;
+        }
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding-left: 60px;
+            padding-right: 60px;
+            flex-grow: 1;
+        }
+        .tech-card {
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid #D4AF37;
+            padding-top: 30px;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-bottom: 30px;
+            text-align: center;
+        }
+        .tech-card i {
+            font-size: 56px;
+            color: #D4AF37;
+            margin-bottom: 25px;
+        }
+        .tech-card h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 22px;
+            color: #D4AF37;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        .tech-card p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #E5E5E5;
+        }
+        .integration-tag {
+            margin-top: 40px;
+            margin-left: 60px;
+            margin-right: 60px;
+            margin-bottom: 40px;
+            background: rgba(229, 198, 75, 0.1);
+            border: 1px solid #D4AF37;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: #D4AF37;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>Supply Chain Technology</h2>
+        </div>
+        <div class="tech-grid">
+            <div class="tech-card">
+                <i class="fas fa-satellite"></i>
+                <h3>Real-Time Tracking</h3>
+                <p>End-to-end visibility of every shipment through integrated IoT and satellite tracking systems.</p>
+            </div>
+            <div class="tech-card">
+                <i class="fas fa-microchip"></i>
+                <h3>Automated Inventory</h3>
+                <p>AI-driven inventory management that predicts demand and automates replenishment across the network.</p>
+            </div>
+            <div class="tech-card">
+                <i class="fas fa-file-contract"></i>
+                <h3>Blockchain Transparency</h3>
+                <p>Immutable ledger for tracking origin, custody, and delivery, ensuring absolute supply chain integrity.</p>
+            </div>
+        </div>
+        <div class="integration-tag">
+            Powered by DEBO AI & Tolani Ecosystem Infrastructure
+        </div>
+    </div>
+</body>
+</html>

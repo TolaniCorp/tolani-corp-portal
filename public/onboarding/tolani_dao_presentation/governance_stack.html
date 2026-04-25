@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #000000;
+            color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            border: 10px solid #D4AF37;
+        }
+        .header {
+            padding-top: 40px;
+            padding-left: 60px;
+            margin-bottom: 50px;
+        }
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 48px;
+            color: #D4AF37;
+            text-transform: uppercase;
+        }
+        .stack-container {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 60px;
+            padding-right: 60px;
+            margin-bottom: 60px;
+        }
+        .stack-item {
+            flex: 1;
+            text-align: center;
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid #D4AF37;
+            padding-top: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 30px;
+            margin: 0 15px;
+        }
+        .stack-item i {
+            font-size: 48px;
+            color: #D4AF37;
+            margin-bottom: 20px;
+        }
+        .stack-item h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            color: #D4AF37;
+            margin-bottom: 15px;
+        }
+        .stack-item p {
+            font-size: 14px;
+            line-height: 1.4;
+            color: #E5E5E5;
+        }
+        .fuel-section {
+            background: rgba(229, 198, 75, 0.1);
+            border: 1px solid #D4AF37;
+            margin-left: 75px;
+            margin-right: 75px;
+            padding-top: 25px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        .fuel-section i {
+            font-size: 50px;
+            color: #D4AF37;
+        }
+        .fuel-content h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            color: #D4AF37;
+            margin-bottom: 10px;
+        }
+        .fuel-content p {
+            font-size: 16px;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>Tools for Collective Action</h2>
+        </div>
+        <div class="stack-container">
+            <div class="stack-item">
+                <i class="fas fa-camera"></i>
+                <h4>Snapshot</h4>
+                <p>Off-chain signaling platform for gasless community voting and sentiment analysis.</p>
+            </div>
+            <div class="stack-item">
+                <i class="fas fa-landmark"></i>
+                <h4>Tolani Governor</h4>
+                <p>The core on-chain contract that manages the proposal lifecycle and voting logic.</p>
+            </div>
+            <div class="stack-item">
+                <i class="fas fa-hourglass-half"></i>
+                <h4>Timelock</h4>
+                <p>A 48-hour delay mechanism ensuring security and providing time for community review.</p>
+            </div>
+            <div class="stack-item">
+                <i class="fas fa-vault"></i>
+                <h4>Gnosis Safe</h4>
+                <p>Multi-signature treasury management for secure execution of approved proposals.</p>
+            </div>
+        </div>
+        <div class="fuel-section">
+            <i class="fas fa-gas-pump"></i>
+            <div class="fuel-content">
+                <h3>TUT: The Governance Fuel</h3>
+                <p>TUT tokens (ERC20Votes) power the entire governance stack, enabling secure delegation, proposal submission, and verifiable voting weight.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

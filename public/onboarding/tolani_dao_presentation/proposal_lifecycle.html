@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #000000;
+            color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            border: 10px solid #D4AF37;
+        }
+        .header {
+            padding-top: 40px; /* keep the upper padding as required */
+            padding-left: 60px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 48px;
+            color: #D4AF37;
+            text-transform: uppercase;
+        }
+        /* Layout refreshed: use 3 columns so the cards occupy only 2 rows instead of 3 */
+        .lifecycle-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px; /* slightly reduced to save vertical space */
+            padding-left: 60px;
+            padding-right: 60px;
+            flex-grow: 1;
+        }
+        .step-card {
+            background: rgba(212, 175, 55, 0.1);
+            border-left: 6px solid #D4AF37;
+            padding: 18px; /* shrink inner padding to reduce height */
+            display: flex;
+            gap: 12px; /* reduce inner gap */
+        }
+        .step-number {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            color: #D4AF37;
+            opacity: 0.5;
+            min-width: 40px;
+        }
+        .step-content h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 22px;
+            color: #D4AF37;
+            margin-bottom: 8px; /* slightly reduced */
+            text-transform: uppercase;
+        }
+        .step-content p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #E5E5E5;
+            margin-bottom: 8px; /* ensure smaller spacing under paragraphs */
+        }
+        .requirement-tag {
+            display: inline-block;
+            margin-top: 6px;
+            background: rgba(0, 175, 175, 0.2);
+            color: #D4AF37;
+            padding: 3px 10px; /* reduced vertical padding */
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        /* last card style adjusted but not spanning two columns to save vertical space */
+        .step-card.final {
+            border-left-color: #D4AF37;
+            background: rgba(0, 175, 175, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>From Idea to Execution</h2>
+        </div>
+        <div class="lifecycle-grid">
+            <div class="step-card">
+                <div class="step-number">01</div>
+                <div class="step-content">
+                    <h3>Drafting & Discussion</h3>
+                    <p>Community members draft proposals and discuss them in the official forum to gather feedback and refine the scope.</p>
+                    <div class="requirement-tag">Community Consensus</div>
+                </div>
+            </div>
+            <div class="step-card">
+                <div class="step-number">02</div>
+                <div class="step-content">
+                    <h3>Snapshot Signaling</h3>
+                    <p>A gasless vote on Snapshot gauges community sentiment. This acts as a non-binding signal before moving to on-chain action.</p>
+                    <div class="requirement-tag">Soft Quorum Required</div>
+                </div>
+            </div>
+            <div class="step-card">
+                <div class="step-number">03</div>
+                <div class="step-content">
+                    <h3>Formal On-Chain Proposal</h3>
+                    <p>The proposal is formally submitted to the Tolani Governor contract. This initiates the official voting period for TUT holders.</p>
+                    <div class="requirement-tag">TUT Delegation Required</div>
+                </div>
+            </div>
+            <div class="step-card">
+                <div class="step-number">04</div>
+                <div class="step-content">
+                    <h3>Voting & Timelock</h3>
+                    <p>If quorum is reached and the vote passes, the proposal enters the Timelock for a 48-hour security delay before execution.</p>
+                    <div class="requirement-tag">48H Security Delay</div>
+                </div>
+            </div>
+            <div class="step-card final">
+                <div class="step-number">05</div>
+                <div class="step-content">
+                    <h3>On-Chain Execution</h3>
+                    <p>The approved action is executed by the Gnosis Safe multi-sig, completing the lifecycle and implementing the community's decision across the ecosystem.</p>
+                    <div class="requirement-tag">Final Execution</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #000000;
+            color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            border: 10px solid #D4AF37;
+        }
+        .header {
+            padding-top: 40px;
+            padding-left: 60px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 48px;
+            color: #D4AF37;
+            text-transform: uppercase;
+        }
+        .network-content {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 40px;
+            padding-left: 60px;
+            padding-right: 60px;
+            flex-grow: 1;
+        }
+        .map-placeholder {
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid #D4AF37;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .map-placeholder i {
+            font-size: 300px;
+            color: rgba(0, 175, 175, 0.1);
+        }
+        .hub-marker {
+            position: absolute;
+            color: #D4AF37;
+            font-size: 24px;
+        }
+        .hub-details {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .hub-card {
+            background: rgba(0, 115, 115, 0.3);
+            border-left: 5px solid #D4AF37;
+            padding-top: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 15px;
+        }
+        .hub-card h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            color: #D4AF37;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        .hub-card p {
+            font-size: 14px;
+            color: #E5E5E5;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>Global Logistics Network</h2>
+        </div>
+        <div class="network-content">
+            <div class="map-placeholder">
+                <i class="fas fa-globe-americas"></i>
+                <!-- Simulated Hub Markers -->
+                <div class="hub-marker" style="top: 30%; left: 25%;"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="hub-marker" style="top: 50%; left: 45%;"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="hub-marker" style="top: 40%; left: 70%;"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="hub-marker" style="top: 65%; left: 80%;"><i class="fas fa-map-marker-alt"></i></div>
+            </div>
+            <div class="hub-details">
+                <div class="hub-card">
+                    <h3>Strategic Distribution Hubs</h3>
+                    <p>Optimizing logistics flow through high-capacity hubs in North America, Europe, and Asia.</p>
+                </div>
+                <div class="hub-card">
+                    <h3>Emerging Market Reach</h3>
+                    <p>Expanding supply routes into Africa and Latin America to support global economic inclusion.</p>
+                </div>
+                <div class="hub-card">
+                    <h3>Multi-Modal Transport</h3>
+                    <p>Utilizing air, sea, and land transport lanes for maximum flexibility and resilience.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

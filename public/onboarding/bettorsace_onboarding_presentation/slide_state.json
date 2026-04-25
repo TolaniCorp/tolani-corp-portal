@@ -1,0 +1,252 @@
+{
+  "project_info": {
+    "title": "BettorsACE Early Employee Onboarding",
+    "created": 1776706712.9976797,
+    "last_updated": 1776711869.6409638,
+    "total_slides": 20
+  },
+  "slides": [
+    {
+      "id": "title_slide",
+      "state": "edited",
+      "pageNum": 1
+    },
+    {
+      "id": "why_matters",
+      "state": "edited",
+      "pageNum": 2
+    },
+    {
+      "id": "platform_map",
+      "state": "edited",
+      "pageNum": 3
+    },
+    {
+      "id": "platform_mechanics",
+      "state": "edited",
+      "pageNum": 4
+    },
+    {
+      "id": "data_ingestion",
+      "state": "edited",
+      "pageNum": 5
+    },
+    {
+      "id": "reliability_signals",
+      "state": "edited",
+      "pageNum": 6
+    },
+    {
+      "id": "paygate_model",
+      "state": "edited",
+      "pageNum": 7
+    },
+    {
+      "id": "paygate_limits",
+      "state": "edited",
+      "pageNum": 8
+    },
+    {
+      "id": "mcp_tool_access",
+      "state": "edited",
+      "pageNum": 9
+    },
+    {
+      "id": "support_responsibilities",
+      "state": "edited",
+      "pageNum": 10
+    },
+    {
+      "id": "incident_response_basics",
+      "state": "edited",
+      "pageNum": 11
+    },
+    {
+      "id": "security_ops_baseline",
+      "state": "edited",
+      "pageNum": 12
+    },
+    {
+      "id": "secret_hygiene_workflow",
+      "state": "edited",
+      "pageNum": 13
+    },
+    {
+      "id": "identity_access_controls",
+      "state": "edited",
+      "pageNum": 14
+    },
+    {
+      "id": "release_guardrails",
+      "state": "edited",
+      "pageNum": 15
+    },
+    {
+      "id": "responsible_use_safety",
+      "state": "edited",
+      "pageNum": 16
+    },
+    {
+      "id": "ramp_plan_30_60_90",
+      "state": "edited",
+      "pageNum": 17
+    },
+    {
+      "id": "practical_drills",
+      "state": "edited",
+      "pageNum": 18
+    },
+    {
+      "id": "team_agreements",
+      "state": "edited",
+      "pageNum": 19
+    },
+    {
+      "id": "action_items_certification",
+      "state": "edited",
+      "pageNum": 20
+    }
+  ],
+  "outline": [
+    {
+      "id": "title_slide",
+      "title": "BettorsACE Early Employee Onboarding",
+      "summary": "Title slide with the main theme of operating the platform with confidence.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "why_matters",
+      "title": "Why This Matters",
+      "summary": "Explaining the foundations of trust and shared accountability.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "platform_map",
+      "title": "Platform Map (What We Run)",
+      "summary": "Overview of the primary surfaces and core technology stack.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "platform_mechanics",
+      "title": "Core Platform Mechanics (Intelligence Pipeline)",
+      "summary": "Detailing the CLV, Fair Pricing, and CCIR NLP engines.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "data_ingestion",
+      "title": "Data and Ingestion Mechanics",
+      "summary": "Explaining the modular ingestion architecture and potential failure modes.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "reliability_signals",
+      "title": "Reliability Signals We Care About",
+      "summary": "Key availability, auth, and prediction integrity metrics.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "paygate_model",
+      "title": "Paygate Model (MCP/API)",
+      "summary": "Overview of policy-driven tiers: Free, Pro, and Enterprise.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "paygate_limits",
+      "title": "Paygate Limits and Commercial Expectations",
+      "summary": "Commercial boundaries and team discipline regarding quotas.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "mcp_tool_access",
+      "title": "MCP Tool Access and Gating Discipline",
+      "summary": "Security policies for tool federation and operator verification.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "support_responsibilities",
+      "title": "Support Responsibilities by Function",
+      "summary": "Roles for Product, Engineering, Security, and the Founding Team.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "incident_response_basics",
+      "title": "Incident Response Basics",
+      "summary": "Prioritizing P0/P1 signals and algorithm regression strategies.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "security_ops_baseline",
+      "title": "Security Operations Baseline",
+      "summary": "Fundamental rules for secret management and vulnerability reporting.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "secret_hygiene_workflow",
+      "title": "Secret Hygiene and Rotation Workflow",
+      "summary": "Triggers and the step-by-step sequence for secret rotation.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "identity_access_controls",
+      "title": "Identity and Access Controls",
+      "summary": "Managed provisioning, offboarding, and periodic access reviews.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "release_guardrails",
+      "title": "Release and Go-Live Guardrails",
+      "summary": "Pre-release checks and post-release monitoring requirements.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "responsible_use_safety",
+      "title": "Responsible Use and User Safety",
+      "summary": "Gambling controls and risk communication standards.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "ramp_plan_30_60_90",
+      "title": "30/60/90 Day Ramp Plan",
+      "summary": "Measurable milestones for new employees over their first three months.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "practical_drills",
+      "title": "Practical Drills (Required)",
+      "summary": "Hands-on simulations for paygates, secrets, and incidents.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "team_agreements",
+      "title": "Team Agreements",
+      "summary": "Cultural commitments to policy, risk transparency, and safety.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "action_items_certification",
+      "title": "Action Items and Certification",
+      "summary": "Final steps for onboarding completion and access certification.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    }
+  ]
+}

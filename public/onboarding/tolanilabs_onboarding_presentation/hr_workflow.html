@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Space+Grotesk:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body { margin: 0; }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #000000;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Inter', sans-serif;
+        color: #E5E5E5;
+      }
+      .header { padding-top: 60px; padding-left: 60px; }
+      .page-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 32px;
+        color: #FFB800;
+        text-transform: uppercase;
+        border-left: 6px solid #FFB800;
+        padding-left: 20px;
+      }
+      .workflow-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding-top: 50px;
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+      .workflow-card {
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid #404040;
+        padding-top: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
+        min-height: 450px;
+      }
+      .workflow-card h3 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 18px;
+        color: #FFB800;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        border-bottom: 1px solid #FFB800;
+        padding-bottom: 10px;
+      }
+      .check-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .check-list li {
+        font-size: 14px;
+        padding-left: 25px;
+        position: relative;
+        color: #A0A0B0;
+      }
+      .check-list li::before {
+        content: '☐';
+        position: absolute;
+        left: 0;
+        color: #FFB800;
+      }
+      .check-list b { color: #E5E5E5; }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1 class="page-title">HR & Contractor Workflow</h1>
+        </div>
+        <div class="workflow-grid">
+            <div class="workflow-card">
+                <h3>Pre-Onboarding</h3>
+                <ul class="check-list">
+                    <li><b>Contractor Agreement:</b> Signed via Deel.</li>
+                    <li><b>NDA:</b> Signed legal document.</li>
+                    <li><b>IP Assignment:</b> Full transfer of work product.</li>
+                    <li><b>Tax Forms:</b> W-9 / W-8BEN compliance.</li>
+                    <li><b>ID Verification:</b> Copy of valid identification.</li>
+                </ul>
+            </div>
+            <div class="workflow-card">
+                <h3>Day 1: System Access</h3>
+                <ul class="check-list">
+                    <li><b>Email:</b> Corporate account setup.</li>
+                    <li><b>Slack:</b> Join ecosystem workspace.</li>
+                    <li><b>GitHub:</b> Add to organization.</li>
+                    <li><b>Linear/Notion:</b> Project management tools.</li>
+                    <li><b>Deel:</b> Payment portal access.</li>
+                </ul>
+            </div>
+            <div class="workflow-card">
+                <h3>Week 1 Checkpoints</h3>
+                <ul class="check-list">
+                    <li><b>Welcome Session:</b> Mission & Culture overview.</li>
+                    <li><b>Handbook Review:</b> OpSec & Comms norms.</li>
+                    <li><b>Project Kickoff:</b> Scope & Deliverables.</li>
+                    <li><b>Initial Task:</b> First commit or deliverable.</li>
+                    <li><b>Manager Sync:</b> First week progress check.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

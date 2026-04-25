@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+      html, body { height: 100%; margin: 0; }
+      .slide-container { 
+        width: 1280px; 
+        min-height: 720px; 
+        box-sizing: border-box; 
+        background: #000000; 
+        color: #FFFFFF; 
+        font-family: 'Space Grotesk', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .cta-header {
+        font-size: 56px;
+        color: #FFB800;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      .contact-info {
+        font-family: 'Inter', sans-serif;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 40px; /* reduced to tighten layout */
+        opacity: 0.8;
+        line-height: 1.6;
+      }
+      .branding-footer {
+        font-size: 48px;
+        font-family: 'JetBrains Mono', monospace;
+        color: #FFB800;
+        display: flex;
+        align-items: center;
+      }
+      .cursor {
+        width: 20px;
+        height: 40px;
+        background-color: #00FF41;
+        margin: 0 8px;
+        animation: blink 1s step-end infinite;
+      }
+      @keyframes blink {
+        from, to { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      .decor-line {
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background: rgba(225, 6, 0, 0.3);
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="decor-line" style="top: 15%;"></div>
+        <div class="decor-line" style="bottom: 15%;"></div>
+        
+        <h1 class="cta-header">Join the Unchained Operation</h1>
+        
+        <div class="contact-info">
+            For deployment inquiries and mission briefings:<br>
+            <strong>terri@tolanilabs.com</strong><br>
+            Secure Channel: #debo-unchained
+        </div>
+        
+        <div class="branding-footer">
+            DE<div class="cursor"></div>BO UNCHAINED
+        </div>
+    </div>
+</body>
+</html>

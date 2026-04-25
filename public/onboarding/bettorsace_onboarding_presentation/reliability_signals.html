@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Space+Grotesk:wght@400&family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+      body { margin: 0; }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #000000;
+        background-image: 
+          linear-gradient(rgba(255, 184, 0, 0.03) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 184, 0, 0.03) 1px, transparent 1px);
+        background-size: 40px 40px;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Inter', sans-serif;
+        color: #FFFFFF;
+        position: relative;
+      }
+      .header {
+        padding-top: 60px;
+        padding-left: 60px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      .logo {
+        height: 40px;
+        object-fit: contain;
+      }
+      .page-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 32px;
+        color: #FFB800;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      .signals-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        padding-top: 60px;
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+      .signal-card {
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid #252540;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        min-height: 380px;
+      }
+      .signal-card i {
+        font-size: 32px;
+        color: #FFB800;
+        margin-bottom: 20px;
+      }
+      .signal-card h2 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 22px;
+        color: #FFB800;
+        margin-bottom: 24px;
+        text-transform: uppercase;
+      }
+      .signal-list {
+        list-style: none;
+      }
+      .signal-list li {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #A0A0B0;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .signal-list li::before {
+        content: "→";
+        color: #FFB800;
+        font-weight: bold;
+      }
+      .footer-note {
+        position: absolute;
+        bottom: 60px;
+        left: 60px;
+        right: 60px;
+        border-top: 1px solid #252540;
+        padding-top: 20px;
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 18px;
+        color: #FF4444;
+        font-style: italic;
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <img src="/home/ubuntu/presentation_assets/master_brand/TolaniLabs_DigitalT.png" class="logo" alt="Logo">
+            <h1 class="page-title">Reliability Signals We Care About</h1>
+        </div>
+        <div class="signals-grid">
+            <div class="signal-card">
+                <i class="fas fa-server"></i>
+                <h2>Availability</h2>
+                <ul class="signal-list">
+                    <li>Frontend routes healthy</li>
+                    <li>API health endpoints active</li>
+                    <li>Readiness checks passing</li>
+                    <li>Provider feed stability</li>
+                </ul>
+            </div>
+            <div class="signal-card">
+                <i class="fas fa-key"></i>
+                <h2>Auth Reliability</h2>
+                <ul class="signal-list">
+                    <li>No callback mismatches</li>
+                    <li>Audience validation success</li>
+                    <li>Zero login loop incidents</li>
+                    <li>Token refresh continuity</li>
+                </ul>
+            </div>
+            <div class="signal-card">
+                <i class="fas fa-chart-line"></i>
+                <h2>Prediction Integrity</h2>
+                <ul class="signal-list">
+                    <li>AI picks render correctly</li>
+                    <li>Confidence scores within range</li>
+                    <li>Workflow continuity</li>
+                    <li>Data freshness validation</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-note">
+            Tie to readiness gates and daily checks; these signals are NOT optional.
+        </div>
+    </div>
+</body>
+</html>

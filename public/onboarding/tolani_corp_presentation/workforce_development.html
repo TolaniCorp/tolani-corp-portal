@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #000000;
+            color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            border: 10px solid #D4AF37;
+        }
+        .header {
+            padding-top: 40px;
+            padding-left: 60px;
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 48px;
+            color: #D4AF37;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            padding-left: 60px;
+            padding-right: 60px;
+            flex-grow: 1;
+        }
+        .pillar-card {
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid #D4AF37;
+            padding-top: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 30px;
+        }
+        .pillar-card h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            color: #D4AF37;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .pillar-card h3 i {
+            color: #D4AF37;
+        }
+        .pillar-card p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #E5E5E5;
+            margin-bottom: 15px;
+        }
+        .metrics-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .metrics-table th, .metrics-table td {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(0, 115, 115, 0.3);
+        }
+        .metrics-table th {
+            font-family: 'Montserrat', sans-serif;
+            color: #D4AF37;
+            background: rgba(0, 115, 115, 0.4);
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        .metrics-table td {
+            font-size: 16px;
+        }
+        .highlight {
+            color: #D4AF37;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h2>Investing in Human Capital</h2>
+        </div>
+        <div class="main-content">
+            <div class="pillar-card">
+                <h3><i class="fas fa-graduation-cap"></i> IBM SkillsBuild</h3>
+                <p>Strategic partnership to provide world-class digital training and certifications to our global workforce, bridging the technical gap in emerging markets.</p>
+                <p>Learners gain verifiable credentials that are recognized by industry leaders, enhancing their career prospects within and beyond the Tolani ecosystem.</p>
+            </div>
+            <div class="pillar-card">
+                <h3><i class="fas fa-chart-line"></i> Impact Metrics</h3>
+                <table class="metrics-table">
+                    <thead>
+                        <tr>
+                            <th>Program</th>
+                            <th>Strategic Goal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Digital Literacy</td>
+                            <td><span class="highlight">100%</span> Basic Competency</td>
+                        </tr>
+                        <tr>
+                            <td>AI & Engineering</td>
+                            <td><span class="highlight">500+</span> Certified Devs</td>
+                        </tr>
+                        <tr>
+                            <td>ESG Rewards</td>
+                            <td><span class="highlight">5M+</span> TUT Incentives</td>
+                        </tr>
+                        <tr>
+                            <td>Global Reach</td>
+                            <td><span class="highlight">20+</span> Countries Active</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

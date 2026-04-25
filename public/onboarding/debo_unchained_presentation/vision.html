@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+      html,body{height:100%;margin:0;background:#000000}
+      .slide-container{width:1280px;min-height:720px;box-sizing:border-box;background:#000000;color:#FFF;font-family:'Inter',sans-serif;display:flex;padding-top:60px;position:relative;overflow:hidden}
+      .content-left{width:50%;padding-left:64px;display:flex;flex-direction:column}
+      .content-right{width:50%;display:flex;justify-content:center;align-items:center;padding-right:64px}
+      .header{font-family:'Space Grotesk',sans-serif;font-size:48px;color:#FFB800;margin-bottom:18px;text-transform:uppercase}
+      .vision-statement{font-size:24px;line-height:1.4;margin-bottom:12px;border-left:4px solid #FFB800;padding-left:20px;max-width:85%}
+      .value-item{margin-bottom:10px;display:flex;align-items:flex-start}
+      .value-icon{color:#FFB800;font-size:24px;margin-right:12px;margin-top:3px}
+      .value-text h3{font-family:'Space Grotesk',sans-serif;font-size:22px;color:#FFB800;margin-bottom:6px}
+      .value-text p{font-size:16px;opacity:0.8;margin:0}
+      .visual-box{width:380px;height:380px;border:1px solid rgba(0,180,216,0.3);background:rgba(0,180,216,0.05);display:flex;justify-content:center;align-items:center;position:relative}
+      .visual-box img{width:340px;height:340px;object-fit:cover}
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="content-left">
+            <h1 class="header">The Ghost Terminal Vision</h1>
+            <div class="vision-statement">Evolving DEBO mission command into an offensive-security-first platform for the next generation of operators.</div>
+            <div class="value-item">
+                <i class="fas fa-bolt value-icon"></i>
+                <div class="value-text">
+                    <h3>Relentless Speed</h3>
+                    <p>Automated orchestration that shortens finding-to-action cycles to minutes.</p>
+                </div>
+            </div>
+            <div class="value-item">
+                <i class="fas fa-user-secret value-icon"></i>
+                <div class="value-text">
+                    <h3>Total Stealth</h3>
+                    <p>Advanced obfuscation and proxying to keep operations undetected.</p>
+                </div>
+            </div>
+            <div class="value-item">
+                <i class="fas fa-crosshairs value-icon"></i>
+                <div class="value-text">
+                    <h3>Surgical Precision</h3>
+                    <p>Targeted OSINT and exploit verification mapped to MITRE ATT&amp;CK.</p>
+                </div>
+            </div>
+        </div>
+        <div class="content-right">
+            <div class="visual-box">
+                <img src="/home/ubuntu/debo_unchained_dashboard.png" alt="DEBO Unchained Vision Visual">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

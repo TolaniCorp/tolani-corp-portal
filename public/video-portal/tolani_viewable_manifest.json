@@ -1,0 +1,46 @@
+{
+  "videos": [
+    {
+      "name": "bettorsace_early_employee_onboarding",
+      "file": "bettorsace_early_employee_onboarding_enhanced.mp4",
+      "enhanced": true,
+      "path": "/mnt/data/video_upgrade/enhanced/bettorsace_early_employee_onboarding_enhanced.mp4"
+    },
+    {
+      "name": "debo_unchained_precision_offensive_security",
+      "file": "debo_unchained_precision_offensive_security_enhanced.mp4",
+      "enhanced": true,
+      "path": "/mnt/data/video_upgrade/enhanced/debo_unchained_precision_offensive_security_enhanced.mp4"
+    },
+    {
+      "name": "devbot_debo_early_employee_onboarding",
+      "file": "devbot_debo_early_employee_onboarding_enhanced.mp4",
+      "enhanced": true,
+      "path": "/mnt/data/video_upgrade/enhanced/devbot_debo_early_employee_onboarding_enhanced.mp4"
+    },
+    {
+      "name": "tolani_corp_onboarding",
+      "file": "tolani_corp_onboarding.mp4",
+      "enhanced": false,
+      "path": "/mnt/data/video_upgrade/tolani_corp_onboarding.mp4"
+    },
+    {
+      "name": "tolani_ecosystem_dao_onboarding",
+      "file": "tolani_ecosystem_dao_onboarding.mp4",
+      "enhanced": false,
+      "path": "/mnt/data/video_upgrade/tolani_ecosystem_dao_onboarding.mp4"
+    },
+    {
+      "name": "tolani_labs_the_factory_onboarding",
+      "file": "tolani_labs_the_factory_onboarding.mp4",
+      "enhanced": false,
+      "path": "/mnt/data/video_upgrade/tolani_labs_the_factory_onboarding.mp4"
+    },
+    {
+      "name": "tsg_the_tolani_utility_token_tut_onboarding",
+      "file": "tsg_the_tolani_utility_token_tut_onboarding.mp4",
+      "enhanced": false,
+      "path": "/mnt/data/video_upgrade/tsg_the_tolani_utility_token_tut_onboarding.mp4"
+    }
+  ]
+}

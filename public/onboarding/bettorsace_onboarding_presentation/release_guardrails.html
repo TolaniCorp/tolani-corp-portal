@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Space+Grotesk:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+      body { margin: 0; }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #000000;
+        background-image: 
+          linear-gradient(rgba(255, 184, 0, 0.03) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 184, 0, 0.03) 1px, transparent 1px);
+        background-size: 40px 40px;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Inter', sans-serif;
+        color: #FFFFFF;
+        position: relative;
+      }
+      .header {
+        padding-top: 60px;
+        padding-left: 60px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      .logo {
+        height: 40px;
+        object-fit: contain;
+      }
+      .page-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 32px;
+        color: #FFB800;
+        text-transform: uppercase;
+      }
+      .guardrails-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        padding-top: 60px;
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+      .guardrail-card {
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid #252540;
+        padding-top: 30px;
+        padding-left: 24px;
+        padding-right: 24px;
+        min-height: 380px;
+      }
+      .guardrail-card i {
+        font-size: 32px;
+        color: #FFB800;
+        margin-bottom: 24px;
+      }
+      .guardrail-card h2 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 20px;
+        color: #FFB800;
+        margin-bottom: 24px;
+        text-transform: uppercase;
+      }
+      .guardrail-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .guardrail-list li {
+        font-size: 15px;
+        color: #A0A0B0;
+        margin-bottom: 16px;
+        line-height: 1.5;
+        display: flex;
+        gap: 12px;
+      }
+      .guardrail-list li::before {
+        content: "•";
+        color: #FFB800;
+        font-weight: 700;
+      }
+      .footer-note {
+        margin-top: 40px;
+        padding-left: 60px;
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 18px;
+        color: #FFB800;
+        font-style: italic;
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <img src="/home/ubuntu/presentation_assets/master_brand/TolaniLabs_DigitalT.png" class="logo" alt="Logo">
+            <h1 class="page-title">Release & Go-Live Guardrails</h1>
+        </div>
+        <div class="guardrails-grid">
+            <div class="guardrail-card">
+                <i class="fas fa-clipboard-list"></i>
+                <h2>Before Release</h2>
+                <ul class="guardrail-list">
+                    <li>Build and sync checks must pass</li>
+                    <li>Route and sitemap validity confirmed</li>
+                    <li>CI secrets present in target platform</li>
+                    <li>Review migration scripts</li>
+                </ul>
+            </div>
+            <div class="guardrail-card">
+                <i class="fas fa-eye"></i>
+                <h2>During Release</h2>
+                <ul class="guardrail-list">
+                    <li>Monitor health and readiness endpoints</li>
+                    <li>Track key user journey metrics</li>
+                    <li>Watch for unexpected error spikes</li>
+                    <li>Verify live log streaming</li>
+                </ul>
+            </div>
+            <div class="guardrail-card">
+                <i class="fas fa-check-double"></i>
+                <h2>After Release</h2>
+                <ul class="guardrail-list">
+                    <li>Confirm no paygate regressions</li>
+                    <li>Validate auth flows for all tiers</li>
+                    <li>Final verification of intelligence signals</li>
+                    <li>Close release incident ticket</li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-note">Every release is both a product event and an operations event.</p>
+    </div>
+</body>
+</html>

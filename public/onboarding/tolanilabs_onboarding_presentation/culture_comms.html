@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Space+Grotesk:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body { margin: 0; }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #000000;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Inter', sans-serif;
+        color: #E5E5E5;
+      }
+      .header { padding-top: 60px; padding-left: 60px; }
+      .page-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 32px;
+        color: #FFB800;
+        text-transform: uppercase;
+        border-left: 6px solid #FFB800;
+        padding-left: 20px;
+      }
+      .content-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 40px;
+        padding-top: 50px;
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+      .norms-box {
+        background: rgba(225, 6, 0, 0.05);
+        border: 1px solid #FFB800;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        min-height: 400px;
+      }
+      .norms-box h3 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 22px;
+        color: #FFB800;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+      }
+      .norms-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .norms-list li {
+        font-size: 18px;
+        font-weight: bold;
+        color: #E5E5E5;
+      }
+      .norms-list span {
+        display: block;
+        font-size: 14px;
+        font-weight: normal;
+        color: #A0A0B0;
+        margin-top: 5px;
+      }
+      .tools-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+      .tool-item {
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid #404040;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+        min-height: 120px;
+      }
+      .tool-item h4 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 16px;
+        color: #FFB800;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+      }
+      .tool-item p {
+        font-size: 14px;
+        color: #A0A0B0;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1 class="page-title">Culture & Communication Norms</h1>
+        </div>
+        <div class="content-grid">
+            <div class="norms-box">
+                <h3>Core Culture Norms</h3>
+                <ul class="norms-list">
+                    <li>High Ownership<span>Every task is owned from inception to delivery. No excuses.</span></li>
+                    <li>OpSec Rigor<span>Security is not a feature; it's a fundamental baseline of all work.</span></li>
+                    <li>Immediate Action<span>When a Master Gold alert occurs, we move with speed and precision.</span></li>
+                    <li>Extreme Clarity<span>Clear comms, clear code, clear expectations.</span></li>
+                </ul>
+            </div>
+            <div class="tools-grid">
+                <div class="tool-item">
+                    <h4>Slack</h4>
+                    <p>Primary real-time communication hub.</p>
+                </div>
+                <div class="tool-item">
+                    <h4>GitHub</h4>
+                    <p>The source of truth for all code assets.</p>
+                </div>
+                <div class="tool-item">
+                    <h4>Linear</h4>
+                    <p>Mission tracking and task management.</p>
+                </div>
+                <div class="tool-item">
+                    <h4>Deel</h4>
+                    <p>Contractor management and payments.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

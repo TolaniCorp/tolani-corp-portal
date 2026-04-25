@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Space+Grotesk:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body { margin: 0; overflow: hidden; }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        box-sizing: border-box; /* include border in min-height to avoid overflow */
+        background-color: #000000;
+        background-image: 
+          radial-gradient(circle at 10% 20%, rgba(0, 180, 216, 0.05) 0%, transparent 40%),
+          radial-gradient(circle at 90% 80%, rgba(46, 204, 113, 0.05) 0%, transparent 40%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Inter', sans-serif;
+        color: #E5E5E5;
+        position: relative;
+        border: 2px solid #000000;
+      }
+      .title-group {
+        text-align: center;
+        z-index: 2;
+      }
+      .main-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 84px;
+        color: #FFB800;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin-bottom: 20px;
+        text-shadow: 0 0 20px rgba(0, 180, 216, 0.3);
+      }
+      .subtitle {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 32px;
+        color: #2ECC71;
+        letter-spacing: 2px;
+        opacity: 0.9;
+      }
+      .accent-line {
+        width: 100px;
+        height: 4px;
+        background: #FFB800;
+        margin-top: 40px;
+      }
+      .terminal-decor {
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 14px;
+        color: #000000;
+        text-transform: uppercase;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="title-group">
+            <h1 class="main-title">DevBot (DEBO)</h1>
+            <p class="subtitle">Early Employee Onboarding</p>
+            <div class="accent-line"></div>
+        </div>
+        <div class="terminal-decor">
+            v0.1.0 // Mission Command Center // Tolani Labs
+        </div>
+    </div>
+</body>
+</html>

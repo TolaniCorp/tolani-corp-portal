@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Space+Grotesk:wght@400&family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+      body { margin: 0; }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #000000;
+        background-image: 
+          linear-gradient(rgba(255, 184, 0, 0.03) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 184, 0, 0.03) 1px, transparent 1px);
+        background-size: 40px 40px;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Inter', sans-serif;
+        color: #FFFFFF;
+        position: relative;
+      }
+      .header {
+        padding-top: 60px;
+        padding-left: 60px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      .logo {
+        height: 40px;
+        object-fit: contain;
+      }
+      .page-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 32px;
+        color: #FFB800;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      .content-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        padding-top: 60px;
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+      .pillar-item {
+        margin-bottom: 32px;
+        display: flex;
+        gap: 20px;
+      }
+      .icon-box {
+        width: 48px;
+        height: 48px;
+        background: rgba(255, 184, 0, 0.1);
+        border: 1px solid #FFB800;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFB800;
+        font-size: 20px;
+        flex-shrink: 0;
+      }
+      .pillar-text h3 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 20px;
+        color: #FFB800;
+        margin-bottom: 8px;
+      }
+      .pillar-text p {
+        font-size: 16px;
+        color: #A0A0B0;
+        line-height: 1.5;
+      }
+      .accountability-box {
+        background: rgba(255, 255, 255, 0.02);
+        border-top: 2px solid #FFB800;
+        padding-top: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+        height: fit-content;
+      }
+      .accountability-box h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        margin-bottom: 24px;
+      }
+      .accountability-box p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+      }
+      .highlight {
+        color: #FFB800;
+        font-weight: 700;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <img src="/home/ubuntu/presentation_assets/master_brand/TolaniLabs_DigitalT.png" class="logo" alt="Logo">
+            <h1 class="page-title">Why This Matters</h1>
+        </div>
+        <div class="content-grid">
+            <div class="left-col">
+                <div class="pillar-item">
+                    <div class="icon-box"><i class="fas fa-bullseye"></i></div>
+                    <div class="pillar-text">
+                        <h3>Product Accuracy</h3>
+                        <p>Platform mechanics that ensure data integrity and model precision for our users.</p>
+                    </div>
+                </div>
+                <div class="pillar-item">
+                    <div class="icon-box"><i class="fas fa-shield-halved"></i></div>
+                    <div class="pillar-text">
+                        <h3>Commercial Integrity</h3>
+                        <p>Precise control over paygates and entitlements to protect our monetization model.</p>
+                    </div>
+                </div>
+                <div class="pillar-item">
+                    <div class="icon-box"><i class="fas fa-lock"></i></div>
+                    <div class="pillar-text">
+                        <h3>Security Discipline</h3>
+                        <p>Rigorous secret handling, incident response, and access governance at every layer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right-col">
+                <div class="accountability-box">
+                    <h2>Shared Accountability</h2>
+                    <p>Early employees own <span class="highlight">outcomes</span> before formal departments scale.</p>
+                    <p>Role boundaries are evolving, but <span class="highlight">responsibility is absolute</span>. Every operator is a guardian of reliability and trust.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

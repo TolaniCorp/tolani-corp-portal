@@ -1,0 +1,108 @@
+{
+  "project_info": {
+    "title": "Tolani Ecosystem DAO",
+    "created": 1776723933.5735621,
+    "last_updated": 1776724204.1206713,
+    "total_slides": 8
+  },
+  "slides": [
+    {
+      "id": "front_page",
+      "state": "edited",
+      "pageNum": 1
+    },
+    {
+      "id": "mission_structure",
+      "state": "edited",
+      "pageNum": 2
+    },
+    {
+      "id": "governance_stack",
+      "state": "edited",
+      "pageNum": 3
+    },
+    {
+      "id": "treasury_management",
+      "state": "edited",
+      "pageNum": 4
+    },
+    {
+      "id": "proposal_lifecycle",
+      "state": "edited",
+      "pageNum": 5
+    },
+    {
+      "id": "compliance_risk",
+      "state": "edited",
+      "pageNum": 6
+    },
+    {
+      "id": "ecosystem_impact",
+      "state": "edited",
+      "pageNum": 7
+    },
+    {
+      "id": "closing_action",
+      "state": "edited",
+      "pageNum": 8
+    }
+  ],
+  "outline": [
+    {
+      "id": "front_page",
+      "title": "Tolani Ecosystem DAO",
+      "summary": "Introduction to the DAO and its role in the ecosystem.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "mission_structure",
+      "title": "Governance with Purpose",
+      "summary": "Overview of the DAO's mission, legal structure, and core values.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "governance_stack",
+      "title": "Tools for Collective Action",
+      "summary": "Technical tools used for DAO governance, including Snapshot and Gnosis Safe.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "treasury_management",
+      "title": "Managing Ecosystem Wealth",
+      "summary": "How the DAO manages its treasury, assets, and liquidity.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "proposal_lifecycle",
+      "title": "From Idea to Execution",
+      "summary": "The step-by-step process for submitting and executing governance proposals.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "compliance_risk",
+      "title": "Rigor in a Decentralized World",
+      "summary": "Overview of the DAO's compliance with Wyoming law and its risk management strategy.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "ecosystem_impact",
+      "title": "Building Beyond the Blockchain",
+      "summary": "The real-world impact of the DAO on workforce development and ESG.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "closing_action",
+      "title": "Shape the Future",
+      "summary": "Final call to action and how to get involved in the DAO.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    }
+  ]
+}

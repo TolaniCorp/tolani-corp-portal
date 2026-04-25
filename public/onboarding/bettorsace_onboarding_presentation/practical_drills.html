@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Space+Grotesk:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+      body { margin: 0; }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #000000;
+        background-image: 
+          linear-gradient(rgba(255, 184, 0, 0.03) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 184, 0, 0.03) 1px, transparent 1px);
+        background-size: 40px 40px;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Inter', sans-serif;
+        color: #FFFFFF;
+        position: relative;
+      }
+      .header {
+        padding-top: 60px;
+        padding-left: 60px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      .logo {
+        height: 40px;
+        object-fit: contain;
+      }
+      .page-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 32px;
+        color: #FFB800;
+        text-transform: uppercase;
+      }
+      .drills-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        padding-top: 32px; /* reduced from 40 to save vertical space */
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+      .drill-card {
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid #252540;
+        padding-top: 20px; /* slightly reduced */
+        padding-left: 24px;
+        padding-right: 24px;
+        min-height: 180px;
+        display: flex;
+        gap: 20px;
+      }
+      .drill-card i {
+        font-size: 24px;
+        color: #FFB800;
+        margin-top: 4px;
+      }
+      .drill-text h3 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 18px;
+        color: #FFB800;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+      }
+      .drill-text p {
+        font-size: 15px;
+        color: #A0A0B0;
+        line-height: 1.5;
+      }
+      .drill-philosophy {
+        margin-top: 16px; /* reduced from 40 */
+        margin-left: 60px;
+        margin-right: 60px;
+        background: rgba(212, 175, 55, 0.05);
+        border-left: 4px solid #FFB800;
+        padding-top: 8px; /* reduced from 24 */
+        padding-left: 30px;
+        padding-right: 30px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+      }
+      .drill-philosophy p {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 18px;
+        color: #FFFFFF;
+        font-style: italic;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <img src="/home/ubuntu/presentation_assets/master_brand/TolaniLabs_DigitalT.png" class="logo" alt="Logo">
+            <h1 class="page-title">Practical Drills (Required)</h1>
+        </div>
+        <div class="drills-grid">
+            <div class="drill-card">
+                <i class="fas fa-filter"></i>
+                <div class="drill-text">
+                    <h3>Drill 1: Paygate Validation</h3>
+                    <p>Execute tests to confirm correct tier behavior for Free, Pro, and Enterprise accounts across core API endpoints.</p>
+                </div>
+            </div>
+            <div class="drill-card">
+                <i class="fas fa-key"></i>
+                <div class="drill-text">
+                    <h3>Drill 2: Secret Leak & Rotation</h3>
+                    <p>Participate in a tabletop exercise for secret exposure and execute a live rotation of high-risk credentials.</p>
+                </div>
+            </div>
+            <div class="drill-card">
+                <i class="fas fa-rotate-left"></i>
+                <div class="drill-text">
+                    <h3>Drill 3: Incident Rollback</h3>
+                    <p>Simulate a production incident and perform a rollback to a last known-good deployment while monitoring health.</p>
+                </div>
+            </div>
+            <div class="drill-card">
+                <i class="fas fa-user-lock"></i>
+                <div class="drill-text">
+                    <h3>Drill 4: Auth Failure Triage</h3>
+                    <p>Diagnose and resolve common authentication failures, including callback and audience mismatches.</p>
+                </div>
+            </div>
+        </div>
+        <div class="drill-philosophy">
+            <p>Teams retain runbooks through practical drills, not static slides. Certification requires hands-on demonstration.</p>
+        </div>
+    </div>
+</body>
+</html>

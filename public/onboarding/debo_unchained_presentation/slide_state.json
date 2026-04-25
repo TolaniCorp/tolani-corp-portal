@@ -1,0 +1,108 @@
+{
+  "project_info": {
+    "title": "DEBO Unchained: The Ethical Hacker Platform",
+    "created": 1776719957.042977,
+    "last_updated": 1776720693.1676874,
+    "total_slides": 8
+  },
+  "slides": [
+    {
+      "id": "cover",
+      "state": "edited",
+      "pageNum": 1
+    },
+    {
+      "id": "vision",
+      "state": "edited",
+      "pageNum": 2
+    },
+    {
+      "id": "ghost_fleet",
+      "state": "edited",
+      "pageNum": 3
+    },
+    {
+      "id": "mission_command",
+      "state": "edited",
+      "pageNum": 4
+    },
+    {
+      "id": "intelligence",
+      "state": "edited",
+      "pageNum": 5
+    },
+    {
+      "id": "architecture",
+      "state": "edited",
+      "pageNum": 6
+    },
+    {
+      "id": "roadmap",
+      "state": "edited",
+      "pageNum": 7
+    },
+    {
+      "id": "closing",
+      "state": "edited",
+      "pageNum": 8
+    }
+  ],
+  "outline": [
+    {
+      "id": "cover",
+      "title": "DEBO Unchained: The Ethical Hacker Platform",
+      "summary": "Introduction to DEBO Unchained, featuring the new branding and product vision.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "vision",
+      "title": "The Ghost Terminal Vision",
+      "summary": "Defining the offensive security mission and the 'Ghost Terminal' aesthetic.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "ghost_fleet",
+      "title": "The Ghost Fleet: NATT Integration",
+      "summary": "Details on autonomous OSINT and vulnerability orchestration using NATT agents.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "mission_command",
+      "title": "Mission Command: The Unchained Terminal",
+      "summary": "Overview of the terminal-native interface and real-time threat mapping.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "intelligence",
+      "title": "Intelligence & Reporting Compliance",
+      "summary": "Automated pentest reporting and MITRE ATT&CK framework mapping.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "architecture",
+      "title": "Technical Architecture & Scalability",
+      "summary": "The high-performance core, custom LLMs, and distributed agent network.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "roadmap",
+      "title": "Roadmap to Unchained Mastery",
+      "summary": "Key milestones for product development and enterprise scaling.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    },
+    {
+      "id": "closing",
+      "title": "Join the Unchained Operation",
+      "summary": "Final call to action and contact information.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": ""
+    }
+  ]
+}

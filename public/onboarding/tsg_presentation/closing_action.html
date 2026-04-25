@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #000000;
+            background-image: linear-gradient(rgba(0, 77, 77, 0.9), rgba(0, 77, 77, 0.9)), url('/home/ubuntu/presentation_assets/tsg_bg.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            border: 10px solid #D4AF37;
+        }
+        .ankh-symbol {
+            font-size: 60px;
+            color: #D4AF37;
+            margin-bottom: 20px;
+            text-shadow: 0 0 20px rgba(229, 198, 75, 0.4);
+        }
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 56px;
+            color: #D4AF37;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            letter-spacing: 4px;
+        }
+        .action-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            width: 1000px;
+            margin-bottom: 60px;
+        }
+        .action-card {
+            background: rgba(0, 115, 115, 0.4);
+            border: 1px solid #D4AF37;
+            padding-top: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: center;
+            min-height: 200px;
+        }
+        .action-card i {
+            font-size: 40px;
+            color: #D4AF37;
+            margin-bottom: 20px;
+        }
+        .action-card h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #D4AF37;
+            text-transform: uppercase;
+        }
+        .action-card p {
+            font-size: 16px;
+            color: #E5E5E5;
+            line-height: 1.4;
+        }
+        .cta-footer {
+            text-align: center;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #D4AF37;
+            color: #000000;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 40px;
+            padding-right: 40px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            text-decoration: none;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        .links {
+            font-size: 18px;
+            color: #D4AF37;
+            font-family: 'monospace';
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="ankh-symbol">☥</div>
+        <h2>Join the TSG Force</h2>
+        
+        <div class="action-grid">
+            <div class="action-card">
+                <i class="fas fa-certificate"></i>
+                <h3>Get Certified</h3>
+                <p>Complete the TSG Operational Excellence training and earn your logistics certification.</p>
+            </div>
+            <div class="action-card">
+                <i class="fas fa-user-plus"></i>
+                <h3>Start Onboarding</h3>
+                <p>Begin your integration into the Tolani Supply Group and access our global resources.</p>
+            </div>
+            <div class="action-card">
+                <i class="fas fa-handshake"></i>
+                <h3>Strategic Contribution</h3>
+                <p>Propose new logistics routes or sourcing partnerships through the Tolani DAO.</p>
+            </div>
+        </div>
+
+        <div class="cta-footer">
+            <div class="cta-button">tsg.tolanicorp.eth</div>
+            <p class="links">logistics.tolanicorp.eth | supply.tolanicorp.eth</p>
+        </div>
+    </div>
+</body>
+</html>

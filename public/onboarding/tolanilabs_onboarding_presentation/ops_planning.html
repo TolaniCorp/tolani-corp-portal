@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Space+Grotesk:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body { margin: 0; }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #000000;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Inter', sans-serif;
+        color: #E5E5E5;
+      }
+      .header { padding-top: 60px; padding-left: 60px; }
+      .page-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 32px;
+        color: #FFB800;
+        text-transform: uppercase;
+        border-left: 6px solid #FFB800;
+        padding-left: 20px;
+      }
+      .content-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        padding-top: 50px;
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+      .ops-section {
+        background: rgba(225, 6, 0, 0.05);
+        border: 1px solid #FFB800;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        min-height: 400px;
+      }
+      .ops-section h3 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 22px;
+        color: #FFB800;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+      }
+      .ops-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      .ops-list li {
+        font-size: 16px;
+        padding-left: 30px;
+        position: relative;
+      }
+      .ops-list li::before {
+        content: '>';
+        position: absolute;
+        left: 0;
+        color: #FFB800;
+        font-weight: bold;
+      }
+      .ops-list b {
+        color: #FFB800;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1 class="page-title">Operations & Military-Grade Planning</h1>
+        </div>
+        <div class="content-grid">
+            <div class="ops-section">
+                <h3>Planning Frameworks</h3>
+                <ul class="ops-list">
+                    <li><b>FM 5-0:</b> Standardized planning process for all ecosystem ventures.</li>
+                    <li><b>FM 6-0:</b> Command and control protocols for mission execution.</li>
+                    <li><b>SOP Immediate Action:</b> Pre-defined responses for critical incidents.</li>
+                    <li><b>Priority of Work:</b> Rigorous resource allocation based on impact.</li>
+                </ul>
+            </div>
+            <div class="ops-section">
+                <h3>Security & Biz-Ops</h3>
+                <ul class="ops-list">
+                    <li><b>Secret Rotation:</b> Mandatory weekly rotation of production keys.</li>
+                    <li><b>Environment Split:</b> Physical separation of Dev, Staging, and Prod.</li>
+                    <li><b>Auth0 Portal:</b> Centralized identity and access management.</li>
+                    <li><b>OpSec Rigor:</b> Military-grade encryption and access controls.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

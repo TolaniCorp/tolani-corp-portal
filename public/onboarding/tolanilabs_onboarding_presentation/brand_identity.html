@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Space+Grotesk:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body { margin: 0; }
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #000000;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Inter', sans-serif;
+        color: #E5E5E5;
+      }
+      .header { padding-top: 60px; padding-left: 60px; }
+      .page-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 32px;
+        color: #FFB800;
+        text-transform: uppercase;
+        border-left: 6px solid #FFB800;
+        padding-left: 20px;
+      }
+      .swatch-container {
+        display: flex;
+        flex: 1;
+        padding-top: 50px;
+        padding-left: 60px;
+        padding-right: 60px;
+        gap: 20px;
+      }
+      .swatch {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        min-height: 400px;
+      }
+      .color-box {
+        height: 250px;
+        width: 100%;
+      }
+      .swatch-info {
+        padding-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      .swatch-info h3 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 20px;
+        margin-bottom: 5px;
+      }
+      .hex {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 16px;
+        color: #FFB800;
+        margin-bottom: 10px;
+      }
+      .meaning {
+        font-size: 14px;
+        color: #A0A0B0;
+        line-height: 1.4;
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header">
+            <h1 class="page-title">Brand Identity & Codes</h1>
+        </div>
+        <div class="swatch-container">
+            <div class="swatch">
+                <div class="color-box" style="background-color: #FFB800;"></div>
+                <div class="swatch-info">
+                    <h3>Master Gold</h3>
+                    <p class="hex">#FFB800</p>
+                    <p class="meaning">Action, Alert, Speed. The primary trigger for the factory.</p>
+                </div>
+            </div>
+            <div class="swatch">
+                <div class="color-box" style="background-color: #000000;"></div>
+                <div class="swatch-info">
+                    <h3>Graphite</h3>
+                    <p class="hex">#000000</p>
+                    <p class="meaning">Industrial, Carbon. The solid foundation of our infrastructure.</p>
+                </div>
+            </div>
+            <div class="swatch">
+                <div class="color-box" style="background-color: #FFFFFF;"></div>
+                <div class="swatch-info">
+                    <h3>Pure White</h3>
+                    <p class="hex">#FFFFFF</p>
+                    <p class="meaning">Electricity, Future. The digital pulse of our agent fleet.</p>
+                </div>
+            </div>
+            <div class="swatch">
+                <div class="color-box" style="background-color: #2ECC71;"></div>
+                <div class="swatch-info">
+                    <h3>Emerald</h3>
+                    <p class="hex">#2ECC71</p>
+                    <p class="meaning">Success, Go. The signal for completed missions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

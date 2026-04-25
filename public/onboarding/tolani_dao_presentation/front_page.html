@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        .slide-container {
+            width: 1280px;
+            min-height: 720px;
+            background: #000000;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/home/ubuntu/presentation_assets/dao_bg.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            color: #FFFFFF;
+            font-family: 'Inter', sans-serif;
+            border: 10px solid #D4AF37;
+        }
+        .header-circuit {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(rgba(0, 175, 175, 0.1), transparent);
+            border-bottom: 1px solid rgba(0, 175, 175, 0.3);
+        }
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 72px;
+            color: #D4AF37;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+        }
+        .subtitle {
+            font-size: 32px;
+            color: #D4AF37;
+            text-align: center;
+            max-width: 900px;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+        .footer-circuit {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(transparent, rgba(0, 175, 175, 0.1));
+            border-top: 1px solid rgba(0, 175, 175, 0.3);
+        }
+        .ankh-symbol {
+            font-size: 80px;
+            color: #D4AF37;
+            margin-bottom: 30px;
+            text-shadow: 0 0 30px rgba(229, 198, 75, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header-circuit"></div>
+        <div class="ankh-symbol">☥</div>
+        <h1>Tolani Ecosystem DAO</h1>
+        <p class="subtitle">Decentralized Governance for a Global Workforce Ecosystem</p>
+        <div class="footer-circuit"></div>
+    </div>
+</body>
+</html>

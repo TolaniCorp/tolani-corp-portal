@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+      html, body { height: 100%; margin: 0; }
+      .slide-container { 
+        width: 1280px; 
+        min-height: 720px; 
+        box-sizing: border-box; 
+        background: #000000; 
+        color: #FFFFFF; 
+        font-family: 'Inter', sans-serif;
+        display: flex;
+        flex-direction: column;
+        padding-top: 60px; /* DO NOT change - title spacing preserved */
+        position: relative;
+        overflow: hidden;
+        margin-top: -1px; /* shift up 1px to ensure total page < 720px without altering min-height */
+      }
+      .header-section {
+        padding-left: 80px;
+        margin-bottom: 40px;
+      }
+      .header {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 48px;
+        color: #FFB800;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+      .subheader {
+        font-size: 20px;
+        opacity: 0.7;
+        letter-spacing: 1px;
+      }
+      .grid-container {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 80px;
+        padding-right: 80px;
+      }
+      .grid-item {
+        width: 30%;
+        border-top: 2px solid #FFB800;
+        padding-top: 20px;
+      }
+      .item-icon {
+        font-size: 32px;
+        color: #FFB800;
+        margin-bottom: 12px;
+      }
+      .item-title {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 24px;
+        color: #FFFFFF;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+      }
+      .item-description {
+        font-size: 16px;
+        line-height: 1.5;
+        opacity: 0.8;
+      }
+      .tech-specs {
+        margin-top: 12px;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 14px;
+        color: #00FF41;
+        background: rgba(0, 255, 65, 0.05);
+        padding: 8px;
+        border: 1px solid rgba(0, 255, 65, 0.2);
+      }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="header-section">
+            <h1 class="header">The Ghost Fleet: NATT Integration</h1>
+            <p class="subheader">Autonomous Agent Orchestration for Offensive Security Operations</p>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <i class="fas fa-network-wired item-icon"></i>
+                <h2 class="item-title">Autonomous OSINT</h2>
+                <p class="item-description">NATT agents automatically crawl and map target attack surfaces, identifying exposed assets and potential entry points with zero human intervention.</p>
+                <div class="tech-specs">
+                    &gt; SCAN_MODE: PASSIVE<br>
+                    &gt; DEPTH: LEVEL_4<br>
+                    &gt; STATUS: ACTIVE
+                </div>
+            </div>
+            <div class="grid-item">
+                <i class="fas fa-bug item-icon"></i>
+                <h2 class="item-title">Vulnerability Orchestration</h2>
+                <p class="item-description">Deploy specialized agents to perform automated CVE scanning and exploit verification, mapping findings directly to actionable security insights.</p>
+                <div class="tech-specs">
+                    &gt; CVE_DB: UPDATED<br>
+                    &gt; EXPLOIT_ENGINE: V2.4<br>
+                    &gt; THREADS: 1024
+                </div>
+            </div>
+            <div class="grid-item">
+                <i class="fas fa-mask item-icon"></i>
+                <h2 class="item-title">Stealth Mode</h2>
+                <p class="item-description">Advanced proxying and traffic obfuscation for all agent operations, ensuring that offensive maneuvers remain undetected by perimeter defenses.</p>
+                <div class="tech-specs">
+                    &gt; PROXY_CHAIN: ENABLED<br>
+                    &gt; OBFUSCATION: MAX<br>
+                    &gt; SIGNATURE: GHOST
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
