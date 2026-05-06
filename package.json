@@ -33,5 +33,13 @@
     "@types/react-dom": "^19",
     "babel-plugin-react-compiler": "1.0.0",
     "typescript": "^5"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "wouter@3.7.1": "tolani-ecosystem-portal/patches/wouter@3.7.1.patch"
+    },
+    "overrides": {
+      "tailwindcss>nanoid": "3.3.7"
+    }
   }
 }
