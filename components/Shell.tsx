@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { ReactNode } from 'react'
+import { MobileNav } from './MobileNav'
 
 function Header() {
     return (
@@ -34,12 +35,7 @@ function Header() {
                             App
                         </Link>
                     </div>
-                    <div className="flex lg:hidden">
-                        <button type="button" className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-tolani-black">
-                            <span className="sr-only">Open main menu</span>
-                            {/* Icon */}
-                        </button>
-                    </div>
+                    <MobileNav />
                     <div className="hidden lg:flex">
                         <Link href="/#purchase-channels" className="rounded-full bg-tolani-black px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-tolani-charcoal">
                             Purchase Channels <span aria-hidden="true">&rarr;</span>
