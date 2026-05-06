@@ -20,10 +20,14 @@ const extensionNoiseFilter = `
 
       return (
         src.startsWith("chrome-extension://") ||
+        src.includes("lockdown-install.js") ||
         src.includes("installhook.js") ||
         src.includes("inpage.js") ||
         src.includes("csspoofgeomain.bundle.js") ||
         src.includes("contentscript") ||
+        text.includes("ses removing unpermitted intrinsics") ||
+        text.includes("objectmultiplex - malformed chunk without name") ||
+        text.includes("streammiddleware - unknown response id") ||
         text.includes("getofflinesigner") ||
         text.includes("keplr") ||
         text.includes("affirm extension") ||
@@ -34,6 +38,35 @@ const extensionNoiseFilter = `
         text.includes("a listener indicated an asynchronous response by returning true") ||
         text.includes("message channel closed before a response was received")
       );
+    };
+
+    const shouldSuppressConsoleMessage = (args) => {
+      const text = args.map((arg) => {
+        if (typeof arg === "string") return arg;
+        if (arg instanceof Error) return arg.message;
+        try {
+          return JSON.stringify(arg);
+        } catch {
+          return String(arg);
+        }
+      }).join(" ").toLowerCase();
+
+      return isExtensionNoise(text, "");
+    };
+
+    const originalWarn = console.warn.bind(console);
+    const originalError = console.error.bind(console);
+
+    console.warn = (...args) => {
+      if (!shouldSuppressConsoleMessage(args)) {
+        originalWarn(...args);
+      }
+    };
+
+    console.error = (...args) => {
+      if (!shouldSuppressConsoleMessage(args)) {
+        originalError(...args);
+      }
     };
 
     window.addEventListener(
