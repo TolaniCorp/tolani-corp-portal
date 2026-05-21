@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import { TolaniOperatorConsole } from "@/components/TolaniOperatorConsole";
 import type { PlanStage, PurchaseChannelStatus } from "@/lib/portfolioStrategy";
 
 type PlanCard = {
@@ -242,7 +243,7 @@ export function TolaniCorporateRedesign({
               <span className="hidden h-8 w-px bg-white/15 sm:block" />
               <span className="text-xs font-semibold uppercase tracking-[0.18em] text-white/62">Portfolio OS</span>
             </div>
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#c9a963]">Corporate redesign scaffold</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#c9a963]">Production operator console</p>
             <h1 className="mt-5 max-w-4xl text-4xl font-black tracking-normal text-white sm:text-6xl">
               Tolani Corp should feel like the command center for every company it owns.
             </h1>
@@ -264,10 +265,10 @@ export function TolaniCorporateRedesign({
                 Review portfolio strategy
               </Link>
               <Link
-                href="#portfolio-console"
+                href="#operator-console"
                 className="inline-flex min-h-12 items-center rounded-lg border border-white/20 px-5 py-3 text-sm font-semibold text-white/80 transition-colors hover:border-white hover:text-white"
               >
-                Open live console
+                Open operator console
               </Link>
             </div>
             <div className="mt-10 grid gap-3 sm:grid-cols-3">
@@ -415,6 +416,28 @@ export function TolaniCorporateRedesign({
           </div>
         </div>
       </section>
+
+      <TolaniOperatorConsole
+        activeLens={activeLens}
+        activeStage={activeStage}
+        activeRouteKey={activeRouteKey}
+        routes={routes.map((route) => ({
+          key: route.key,
+          platformName: route.platformName,
+          route: route.route,
+          href: route.href,
+          buyer: route.buyer,
+          status: route.status,
+        }))}
+        plans={plans.map((plan) => ({
+          key: plan.key,
+          name: plan.name,
+          domain: plan.domain,
+          stage: plan.stage,
+          ninetyDayMoves: plan.ninetyDayMoves,
+        }))}
+        onSelectRoute={setActiveRouteKey}
+      />
 
       <section id="purchase-channels" className="bg-white px-6 py-16 lg:px-8 lg:py-20">
         <div className="mx-auto max-w-7xl">

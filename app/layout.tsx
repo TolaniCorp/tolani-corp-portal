@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { ConvexClerkProvider } from "@/components/providers/ConvexClerkProvider";
+import { ServiceWorkerRegister } from "@/components/ServiceWorkerRegister";
 import { Shell } from "@/components/Shell";
 import { hasClerkClientEnv } from "@/lib/clerk";
 
@@ -101,6 +102,7 @@ export const metadata: Metadata = {
   description: "At Tolani Corp, we don't just build businesses—we build legacies. Rooted in innovation, transparency, and integrity across diverse industries worldwide.",
   keywords: ["conglomerate", "innovation", "blockchain", "construction", "philanthropy", "global business"],
   authors: [{ name: "Tolani Corp" }],
+  manifest: "/manifest.webmanifest",
   openGraph: {
     title: "Tolani Corp | Building Beyond Boundaries",
     description: "At Tolani Corp, we don't just build businesses—we build legacies.",
@@ -147,6 +149,7 @@ export default function RootLayout({
         <Script id="extension-noise-filter" strategy="beforeInteractive">
           {extensionNoiseFilter}
         </Script>
+        <ServiceWorkerRegister />
         {hasClerk ? (
           <ClerkProvider publishableKey={clerkPubKey}>
             {appContent}
