@@ -10,6 +10,20 @@ export default function manifest(): MetadataRoute.Manifest {
     display: "standalone",
     background_color: "#020617",
     theme_color: "#c9a963",
+    shortcuts: [
+      {
+        name: "Preview Workbench",
+        short_name: "Preview",
+        description: "Open the device-framed Tolani Corp production preview.",
+        url: "/preview",
+      },
+      {
+        name: "Operator Console",
+        short_name: "Console",
+        description: "Open the Tolani Corp portfolio command center.",
+        url: "/#service-worker-console",
+      },
+    ],
     icons: [
       {
         src: "/assets/foundation/favicon-192.png",

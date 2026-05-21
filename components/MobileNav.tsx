@@ -10,6 +10,7 @@ const navLinks = [
   { href: "/communications", label: "Network" },
   { href: "/about", label: "About" },
   { href: "/ecosystem", label: "Ecosystem" },
+  { href: "/preview", label: "Preview" },
   { href: "/app", label: "App" },
 ];
 

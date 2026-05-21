@@ -31,6 +31,9 @@ function Header() {
                         <Link href="/ecosystem" className="text-sm font-semibold leading-6 text-tolani-black hover:text-tolani-gold">
                             Ecosystem
                         </Link>
+                        <Link href="/preview" className="text-sm font-semibold leading-6 text-tolani-black hover:text-tolani-gold">
+                            Preview
+                        </Link>
                         <Link href="/app" className="text-sm font-semibold leading-6 text-tolani-black hover:text-tolani-gold">
                             App
                         </Link>
@@ -86,6 +89,7 @@ function Footer() {
                             <li><Link href="/communications" className="text-sm leading-6 text-gray-300 hover:text-white">Communications</Link></li>
                             <li><Link href="/about" className="text-sm leading-6 text-gray-300 hover:text-white">About</Link></li>
                             <li><Link href="/ecosystem" className="text-sm leading-6 text-gray-300 hover:text-white">Ecosystem</Link></li>
+                            <li><Link href="/preview" className="text-sm leading-6 text-gray-300 hover:text-white">Preview Workbench</Link></li>
                             <li><Link href="/employee-portal" className="text-sm leading-6 text-gray-300 hover:text-white">Employee Portal</Link></li>
                             <li><Link href="/app" className="text-sm leading-6 text-gray-300 hover:text-white">Operations App</Link></li>
                         </ul>
