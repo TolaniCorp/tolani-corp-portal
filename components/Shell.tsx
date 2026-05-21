@@ -4,7 +4,7 @@ import { MobileNav } from './MobileNav'
 
 function Header() {
     return (
-        <header className="absolute left-0 right-0 top-0 z-50 pt-14">
+        <header className="sticky left-0 right-0 top-0 z-50 border-b border-slate-200 bg-white/90 py-3 backdrop-blur">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="flex items-center justify-between">
                     <Link href="/" aria-label="Home">
@@ -37,7 +37,7 @@ function Header() {
                     </div>
                     <MobileNav />
                     <div className="hidden lg:flex">
-                        <Link href="/#purchase-channels" className="rounded-full bg-tolani-black px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-tolani-charcoal">
+                        <Link href="/#purchase-channels" className="rounded-lg bg-tolani-black px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-tolani-charcoal">
                             Purchase Channels <span aria-hidden="true">&rarr;</span>
                         </Link>
                     </div>
@@ -49,7 +49,7 @@ function Header() {
 
 function Footer() {
     return (
-        <footer className="mt-24 sm:mt-32 rounded-t-3xl bg-tolani-black py-16 sm:py-24">
+        <footer className="mt-20 border-t border-white/10 bg-tolani-black py-16 sm:py-20">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-5">
                     <div className="col-span-2 lg:col-span-2">

@@ -1,75 +1,65 @@
-import { Hero } from "../components/Hero";
-import { CommandSurfaces } from "../components/CommandSurfaces";
-import { DynamicCommandCenter } from "../components/DynamicCommandCenter";
-import { LiveAnnouncements } from "../components/LiveAnnouncements";
-import { Portfolio } from "../components/Portfolio";
-import { PurchaseChannelsSection } from "../components/PurchaseChannels";
-import { brandCommunicationProfiles } from "../lib/enterpriseCommunicationNetwork";
-import { getLiveAnnouncements } from "../lib/live-announcements";
-import { platformNodes, signatureLoops, systemPlanes } from "../lib/platformEngineeringAtlas";
-import { featuredPurchaseChannels, portfolioMetrics } from "../lib/portfolioStrategy";
+import { TolaniCorporateRedesign } from "@/components/TolaniCorporateRedesign";
+import { ecosystemBrands } from "@/lib/brands";
+import { brandCommunicationProfiles, enterprisePhoneLines, getPrimaryHqLine, hqIvrTree } from "@/lib/enterpriseCommunicationNetwork";
+import { featuredPurchaseChannels, platformPlans, portfolioMetrics, teamingEvents } from "@/lib/portfolioStrategy";
 
-export default async function Home() {
-  const announcements = await getLiveAnnouncements(3);
+export default function Home() {
+  const hqLine = getPrimaryHqLine()?.display ?? "(877) 691-2134";
 
   return (
-    <>
-      <Hero />
-      <DynamicCommandCenter
-        metrics={{
-          planCount: portfolioMetrics.planCount,
-          revenueLaneCount: portfolioMetrics.revenueLaneCount,
-          stakeholderTrackCount: portfolioMetrics.stakeholderTrackCount,
-          systemPlaneCount: systemPlanes.length,
-          platformNodeCount: platformNodes.length,
-          signatureLoopCount: signatureLoops.length,
-          communicationRouteCount: brandCommunicationProfiles.length,
-        }}
-        channels={featuredPurchaseChannels.map((channel) => ({
-          key: channel.key,
-          platformName: channel.platformName,
-          label: channel.label,
-          status: channel.status,
-          route: channel.route,
-          buyer: channel.buyer,
-          href: channel.href,
-          ctaLabel: channel.ctaLabel,
-        }))}
-        systemPlanes={systemPlanes.map((plane) => ({
-          name: plane.name,
-          headline: plane.headline,
-          systems: plane.systems,
-        }))}
-        signatureLoops={signatureLoops.map((loop) => ({
-          name: loop.name,
-          ownedBy: loop.ownedBy,
-          summary: loop.summary,
-          motion: loop.motion,
-        }))}
-        communicationProfiles={brandCommunicationProfiles.map((profile) => ({
-          name: profile.name,
-          mission: profile.mission,
-          aiAgentLabel: profile.aiAgentLabel,
-          primaryInboundChannels: profile.primaryInboundChannels,
-        }))}
-      />
-      <CommandSurfaces />
-      <section className="bg-white px-6 py-12 lg:px-8 lg:py-16">
-        <div className="mx-auto max-w-7xl">
-          <LiveAnnouncements announcements={announcements} />
-        </div>
-      </section>
-      <section className="bg-[linear-gradient(180deg,#ffffff,#f8fafc_40%,#eef2ff_100%)] px-6 py-24 lg:px-8">
-        <div className="mx-auto max-w-7xl">
-          <PurchaseChannelsSection
-            id="purchase-channels"
-            title="Current buy-now and operator-entry routes"
-            description="These are the active purchase channels across the Tolani portfolio right now. They are direct site, consultation, or operator-routed paths. None of these public routes requires a crypto wallet."
-            channels={featuredPurchaseChannels}
-          />
-        </div>
-      </section>
-      <Portfolio />
-    </>
+    <TolaniCorporateRedesign
+      plans={platformPlans.map((plan) => ({
+        key: plan.key,
+        name: plan.name,
+        domain: plan.domain,
+        stage: plan.stage,
+        category: plan.category,
+        headline: plan.headline,
+        summary: plan.summary,
+        idealCustomers: plan.idealCustomers,
+        flagshipProducts: plan.flagshipProducts,
+        monetizationCount: plan.monetizationSchema.length,
+        ninetyDayMoves: plan.ninetyDayMoves,
+      }))}
+      brands={ecosystemBrands.map((brand) => ({
+        id: brand.id,
+        name: brand.name,
+        tagline: brand.tagline,
+        description: brand.description,
+        logo: brand.logo,
+        color: brand.color,
+        accentColor: brand.accentColor,
+        website: brand.website,
+        industries: brand.industries,
+        keyServices: brand.keyServices,
+      }))}
+      routes={featuredPurchaseChannels.map((channel) => ({
+        key: channel.key,
+        platformName: channel.platformName,
+        route: channel.route,
+        label: channel.label,
+        href: channel.href,
+        buyer: channel.buyer,
+        summary: channel.summary,
+        note: channel.note,
+        ctaLabel: channel.ctaLabel,
+        status: channel.status,
+      }))}
+      metrics={{
+        planCount: portfolioMetrics.planCount,
+        revenueLaneCount: portfolioMetrics.revenueLaneCount,
+        stakeholderTrackCount: portfolioMetrics.stakeholderTrackCount,
+        teamingEventCount: teamingEvents.length,
+        communicationRouteCount: brandCommunicationProfiles.length,
+        phoneLineCount: enterprisePhoneLines.length,
+        ivrBranchCount: hqIvrTree.length,
+      }}
+      hqLine={hqLine}
+      ivrBranches={hqIvrTree.map((branch) => ({
+        digit: branch.digit,
+        label: branch.label,
+        routeSummary: branch.routeSummary,
+      }))}
+    />
   );
 }

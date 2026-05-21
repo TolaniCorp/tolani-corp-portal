@@ -10,24 +10,14 @@ export function Hero() {
   const hqLine = getPrimaryHqLine()
 
   return (
-    <div className="relative isolate pt-14">
-      <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
-        <div
-          className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-tolani-gold to-tolani-charcoal opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-          style={{
-            clipPath:
-              'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-          }}
-        />
-      </div>
-
-      <div className="py-24 sm:py-32 lg:pb-40">
+    <div className="relative isolate bg-[linear-gradient(180deg,#ffffff,#f8fafc_72%,#eef2ff)]">
+      <div className="py-16 sm:py-24 lg:pb-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid gap-16 xl:grid-cols-[1.05fr_0.95fr] xl:items-center">
             <FadeIn>
               <div className="max-w-2xl xl:text-left">
                 <div className="mb-6 flex justify-center xl:justify-start">
-                  <div className="rounded-[1.5rem] border border-gray-200 bg-white px-5 py-4 shadow-sm">
+                  <div className="rounded-lg border border-gray-200 bg-white px-5 py-4 shadow-sm">
                     <Image
                       src="/assets/brand/logo.svg"
                       alt="Tolani Corp"
@@ -39,7 +29,7 @@ export function Hero() {
                   </div>
                 </div>
                 <div className="mb-8 flex justify-center xl:justify-start">
-                  <div className="relative rounded-full border border-gray-900/10 bg-white/80 px-4 py-1.5 text-sm leading-6 text-gray-600 shadow-sm">
+                  <div className="relative rounded-lg border border-gray-900/10 bg-white/80 px-4 py-1.5 text-sm leading-6 text-gray-600 shadow-sm">
                     Strategy, profitability, and teaming command surfaces are now live.{' '}
                     <Link href="/strategy" className="font-semibold text-tolani-gold">
                       <span className="absolute inset-0" aria-hidden="true" />
@@ -48,7 +38,7 @@ export function Hero() {
                   </div>
                 </div>
 
-                <h1 className="text-4xl font-bold tracking-tight text-tolani-black sm:text-6xl">
+                <h1 className="text-4xl font-bold tracking-normal text-tolani-black sm:text-6xl">
                   A command layer for{' '}
                   <span className="text-tolani-gold">strategy, profitability, teaming, brands, and AI systems</span>
                 </h1>
@@ -63,25 +53,25 @@ export function Hero() {
                 <div className="mt-10 flex flex-wrap items-center justify-center gap-4 xl:justify-start">
                   <Link
                     href="/strategy"
-                    className="rounded-md bg-tolani-black px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-tolani-charcoal focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tolani-black"
+                    className="rounded-lg bg-tolani-black px-4 py-3 text-sm font-semibold text-white shadow-sm hover:bg-tolani-charcoal focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-tolani-black"
                   >
                     Open Portfolio Strategy
                   </Link>
                   <Link
                     href="/platform-engineering"
-                    className="rounded-md border border-gray-300 bg-white px-4 py-3 text-sm font-semibold text-gray-900 shadow-sm hover:border-tolani-gold hover:text-tolani-gold"
+                    className="rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm font-semibold text-gray-900 shadow-sm hover:border-tolani-gold hover:text-tolani-gold"
                   >
                     Open Platform Atlas
                   </Link>
                   <Link
                     href="/teaming-events"
-                    className="rounded-md border border-gray-300 bg-white px-4 py-3 text-sm font-semibold text-gray-900 shadow-sm hover:border-tolani-gold hover:text-tolani-gold"
+                    className="rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm font-semibold text-gray-900 shadow-sm hover:border-tolani-gold hover:text-tolani-gold"
                   >
                     Open Teaming Events
                   </Link>
                   <Link
                     href="/app"
-                    className="rounded-md border border-gray-300 bg-white px-4 py-3 text-sm font-semibold text-gray-900 shadow-sm hover:border-tolani-gold hover:text-tolani-gold"
+                    className="rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm font-semibold text-gray-900 shadow-sm hover:border-tolani-gold hover:text-tolani-gold"
                   >
                     Open Operations App
                   </Link>
@@ -111,11 +101,11 @@ export function Hero() {
             </FadeIn>
 
             <div className="flow-root">
-              <div className="-m-2 rounded-[2rem] bg-slate-950 p-2 shadow-2xl ring-1 ring-inset ring-white/10 lg:-m-4 lg:p-4">
-                <div className="rounded-[1.65rem] border border-white/10 bg-[radial-gradient(circle_at_top_left,rgba(245,158,11,0.18),transparent_38%),linear-gradient(180deg,#050816,#0f172a_100%)] p-8 text-white">
+              <div className="-m-2 rounded-lg bg-slate-950 p-2 shadow-2xl ring-1 ring-inset ring-white/10 lg:-m-4 lg:p-4">
+                <div className="rounded-lg border border-white/10 bg-[linear-gradient(180deg,#050816,#0f172a_100%)] p-8 text-white">
                   <div className="flex flex-wrap items-center gap-3 text-xs font-semibold uppercase tracking-[0.24em] text-white/60">
                     <span>Enterprise operating model</span>
-                    <span className="rounded-full border border-white/15 px-3 py-1 text-white/80">
+                    <span className="rounded-lg border border-white/15 px-3 py-1 text-white/80">
                       Dynamic portfolio UX
                     </span>
                   </div>
@@ -126,7 +116,7 @@ export function Hero() {
                         <p className="text-sm font-semibold uppercase tracking-[0.22em] text-tolani-gold">
                           Core thesis
                         </p>
-                        <h2 className="mt-3 text-3xl font-black tracking-tight">
+                        <h2 className="mt-3 text-3xl font-black tracking-normal">
                           Every product can feel distinct on the surface and unmistakably Tolani
                           underneath.
                         </h2>
@@ -161,17 +151,17 @@ export function Hero() {
                       </div>
                     </div>
 
-                    <div className="rounded-[1.5rem] border border-white/10 bg-white/5 p-6 backdrop-blur">
+                    <div className="rounded-lg border border-white/10 bg-white/5 p-6 backdrop-blur">
                       <div className="flex items-center justify-between gap-4">
                         <div>
                           <p className="text-xs font-semibold uppercase tracking-[0.24em] text-white/50">
                             HQ Switchboard
                           </p>
-                          <p className="mt-2 text-2xl font-black tracking-tight text-white">
+                          <p className="mt-2 text-2xl font-black tracking-normal text-white">
                             {hqLine?.display ?? 'Enterprise line pending'}
                           </p>
                         </div>
-                        <span className="rounded-full border border-emerald-400/30 bg-emerald-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-emerald-200">
+                        <span className="rounded-lg border border-emerald-400/30 bg-emerald-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-emerald-200">
                           Voice first
                         </span>
                       </div>
@@ -200,7 +190,7 @@ export function Hero() {
                         />
                       </div>
 
-                      <div className="mt-6 rounded-2xl border border-white/10 bg-white/5 p-4">
+                      <div className="mt-6 rounded-lg border border-white/10 bg-white/5 p-4">
                         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-white/50">
                           Why this matters
                         </p>
@@ -231,9 +221,9 @@ function Signal({
   detail: string
 }) {
   return (
-    <div className="rounded-2xl border border-gray-200 bg-white/80 px-4 py-4 text-left shadow-sm">
+    <div className="rounded-lg border border-gray-200 bg-white/80 px-4 py-4 text-left shadow-sm">
       <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gray-500">{label}</p>
-      <p className="mt-2 text-2xl font-black tracking-tight text-tolani-black">{value}</p>
+      <p className="mt-2 text-2xl font-black tracking-normal text-tolani-black">{value}</p>
       <p className="mt-2 text-sm leading-6 text-gray-600">{detail}</p>
     </div>
   )
@@ -249,7 +239,7 @@ function SurfaceCard({
   detail: string
 }) {
   return (
-    <div className="rounded-3xl border border-white/10 bg-white/5 p-5">
+    <div className="rounded-lg border border-white/10 bg-white/5 p-5">
       <p className="text-xs font-semibold uppercase tracking-[0.22em] text-white/50">{eyebrow}</p>
       <h3 className="mt-2 text-lg font-bold text-white">{title}</h3>
       <p className="mt-3 text-sm leading-6 text-white/75">{detail}</p>
@@ -267,8 +257,8 @@ function RouteRow({
   detail: string
 }) {
   return (
-    <div className="flex items-start gap-4 rounded-2xl border border-white/10 bg-black/20 px-4 py-3">
-      <div className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/10 text-sm font-bold text-white">
+    <div className="flex items-start gap-4 rounded-lg border border-white/10 bg-black/20 px-4 py-3">
+      <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/15 bg-white/10 text-sm font-bold text-white">
         {digit}
       </div>
       <div>
